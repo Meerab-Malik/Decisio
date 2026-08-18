@@ -1,0 +1,2370 @@
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    width: 100%;
+
+    padding: 100px 80px 120px;
+
+    background: linear-gradient(
+        90deg,
+        #EFF6FF 0%,
+        #FFFFFF 80%
+    );
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero__content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: clamp(32px, 5vw, 64px);
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+   ========================================================= */
+
+.hero__left {
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.hero__eyebrow {
+    width: 165px;
+    height: 14px;
+
+    margin: 0 0 24px;
+
+    color: var(--color-brand-primary);
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.hero__heading {
+    width: 100%;
+
+    margin: 0 0 20px;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.hero__description {
+    width: 100%;
+
+    margin: 0 0 24px;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero__actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin: 0 0 32px;
+}
+
+
+.hero__button {
+    height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+/* Primary */
+
+.hero__button--primary {
+    width: 147px;
+
+    background: var(--color-brand-primary);
+    color: var(--color-text-inverse);
+
+    border: 1px solid var(--color-brand-primary);
+}
+
+
+/* Secondary */
+
+.hero__button--secondary {
+    width: 124px;
+
+    background: transparent;
+    color: var(--color-text-primary);
+
+    border: 1px solid #E2E8F0;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.hero__metrics {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: clamp(20px, 5vw, 48px);
+
+    margin: 0;
+}
+
+.hero__metric {
+    width: auto;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+
+
+.hero__metric-number {
+    display: block;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+
+    white-space: nowrap;
+}
+
+
+.hero__metric-label {
+    display: block;
+        width: auto;
+
+    width: 128px;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   RIGHT SIDE
+   ========================================================= */
+
+.hero__right {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   HERO SVG
+   ========================================================= */
+
+.hero__visual {
+    display: block;
+
+    width: 100%;
+    max-width: 615px;
+    height: auto;
+
+    object-fit: contain;
+
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+
+
+/* =========================================================
+   DECISION LAYER
+   ========================================================= */
+
+.decision-layer {
+    width: 100%;
+
+    padding: 80px;
+
+    background: #F8FAFC;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.decision-layer__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.decision-layer__heading {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+.decision-layer__heading-accent {
+    color: var(--color-brand-primary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.decision-layer__description {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 16px 0 0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   THREE STEPS
+   ========================================================= */
+
+.decision-layer__steps {
+    width: 100%;
+
+    margin-top: 48px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 48px;
+}
+
+
+/* =========================================================
+   STEP
+   ========================================================= */
+
+.decision-layer__step {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.decision-layer__icon {
+    width: 40px;
+    height: 40px;
+
+    display: block;
+
+    object-fit: contain;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================================================
+   STEP TITLE
+   ========================================================= */
+
+.decision-layer__step-title {
+    margin: 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+
+/* =========================================================
+   STEP DESCRIPTION
+   ========================================================= */
+
+.decision-layer__step-description {
+    width: 100%;
+    max-width: 300px;
+
+    margin: 10px 0 0;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+
+    text-align: center;
+}
+
+/* =========================================================
+   DECISION LAYER RESPONSIVE
+   ========================================================= */
+
+   /* =========================================================
+   HOME RESPONSIVE
+   ========================================================= */
+
+/* =========================================================
+   HERO RESPONSIVE
+   ========================================================= */
+
+/* =========================================================
+   INTERMEDIATE DESKTOP
+   Two-column layout remains active while there is enough room
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .hero {
+        padding:
+            clamp(72px, 7vw, 100px)
+            clamp(32px, 5vw, 80px)
+            clamp(80px, 8vw, 120px);
+    }
+
+    .hero__content {
+        column-gap: clamp(24px, 4vw, 56px);
+    }
+
+    .hero__heading {
+        font-size: clamp(42px, 4.5vw, 54px);
+    }
+
+    .hero__description {
+        font-size: clamp(16px, 1.5vw, 18px);
+    }
+
+    .hero__metrics {
+        gap: clamp(16px, 3vw, 40px);
+    }
+
+    .hero__visual {
+        width: 100%;
+        max-width: 615px;
+    }
+}
+
+
+/* =========================================================
+   STACKING POINT
+   The two-column layout becomes too constrained here,
+   so the entire hero transitions into a centered layout.
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .hero {
+        padding:
+            clamp(64px, 8vw, 88px)
+            clamp(24px, 6vw, 64px)
+            clamp(72px, 8vw, 96px);
+    }
+
+    .hero__content {
+        grid-template-columns: minmax(0, 1fr);
+
+        row-gap: clamp(48px, 7vw, 72px);
+
+        justify-items: center;
+        align-items: center;
+    }
+
+    .hero__left {
+        width: 100%;
+        max-width: 680px;
+
+        margin-inline: auto;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero__eyebrow {
+        margin-inline: auto;
+    }
+
+    .hero__heading {
+        width: 100%;
+
+        font-size: clamp(38px, 6vw, 52px);
+
+        text-align: center;
+    }
+
+    .hero__description {
+        width: 100%;
+
+        font-size: clamp(16px, 2vw, 18px);
+
+        text-align: center;
+    }
+
+    .hero__actions {
+        justify-content: center;
+    }
+
+    .hero__metrics {
+        justify-content: center;
+    }
+
+    .hero__right {
+        width: 100%;
+        max-width: 680px;
+
+        margin-inline: auto;
+
+        justify-self: center;
+    }
+
+    .hero__visual {
+        width: 100%;
+        max-width: 615px;
+
+        margin-inline: auto;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        padding:
+            clamp(56px, 8vw, 72px)
+            clamp(24px, 6vw, 48px)
+            clamp(64px, 8vw, 80px);
+    }
+
+    .hero__content {
+        row-gap: clamp(40px, 7vw, 60px);
+    }
+
+    .hero__left {
+        max-width: 640px;
+    }
+
+    .hero__eyebrow {
+        margin-bottom: clamp(18px, 3vw, 24px);
+    }
+
+    .hero__heading {
+        font-size: clamp(36px, 6vw, 48px);
+        line-height: 110%;
+    }
+
+    .hero__description {
+        margin-bottom: clamp(20px, 3vw, 24px);
+
+        font-size: clamp(15px, 2vw, 17px);
+        line-height: 155%;
+    }
+
+    .hero__actions {
+        margin-bottom: clamp(28px, 4vw, 32px);
+    }
+
+    .hero__metrics {
+        gap: clamp(20px, 5vw, 40px);
+    }
+
+    .hero__metric-number {
+        font-size: clamp(22px, 3vw, 24px);
+    }
+
+    .hero__metric-label {
+        width: auto;
+
+        font-size: clamp(11px, 1.6vw, 12px);
+    }
+
+    .hero__right {
+        max-width: 640px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding:
+            clamp(48px, 10vw, 64px)
+            clamp(20px, 6vw, 32px)
+            clamp(56px, 10vw, 72px);
+    }
+
+    .hero__content {
+        row-gap: clamp(36px, 8vw, 48px);
+    }
+
+    .hero__left {
+        max-width: 100%;
+    }
+
+    .hero__eyebrow {
+        width: auto;
+        height: auto;
+
+        margin-bottom: clamp(16px, 4vw, 20px);
+
+        font-size: 10px;
+    }
+
+    .hero__heading {
+        font-size: clamp(30px, 8vw, 40px);
+        line-height: 110%;
+        letter-spacing: -0.025em;
+    }
+
+    .hero__description {
+        margin-bottom: clamp(20px, 5vw, 24px);
+
+        font-size: clamp(14px, 4vw, 16px);
+        line-height: 155%;
+    }
+
+    .hero__actions {
+        width: 100%;
+
+        margin-bottom: clamp(24px, 6vw, 32px);
+
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero__button {
+        height: 42px;
+    }
+
+    .hero__metrics {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        gap: clamp(12px, 4vw, 24px);
+
+        justify-content: center;
+    }
+
+    .hero__metric {
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero__metric-number {
+        font-size: clamp(20px, 6vw, 24px);
+    }
+
+    .hero__metric-label {
+        width: auto;
+
+        max-width: 110px;
+
+        white-space: normal;
+
+        font-size: 11px;
+        line-height: 130%;
+
+        text-align: center;
+    }
+
+    .hero__right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero__visual {
+        width: 100%;
+        max-width: 615px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .hero__metrics {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hero__metric-label {
+        max-width: 140px;
+    }
+}
+
+
+
+/* =========================================================
+   DECISION LAYER RESPONSIVE
+   ========================================================= */
+
+/* TABLET + MEDIUM */
+@media (max-width: 900px) {
+
+
+    
+
+    .decision-layer {
+        padding: clamp(4rem, 8vw, 5rem) 6%;
+    }
+
+    .decision-layer__heading {
+        font-size: clamp(1.875rem, 4.5vw, 2.25rem);
+    }
+
+    .decision-layer__description {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+    }
+
+    /* Stack the three decision steps */
+    .decision-layer__steps {
+        grid-template-columns: 1fr;
+
+        gap: clamp(2.5rem, 6vw, 3.5rem);
+
+        margin-top: clamp(2.5rem, 6vw, 3rem);
+    }
+
+    .decision-layer__step-title {
+        font-size: clamp(1rem, 2.3vw, 1.125rem);
+    }
+
+    .decision-layer__step-description {
+        font-size: clamp(0.8125rem, 1.8vw, 0.875rem);
+        max-width: 28rem;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 600px) {
+
+    .decision-layer {
+        padding: clamp(3.5rem, 10vw, 4.5rem) 6%;
+    }
+
+    .decision-layer__heading {
+        font-size: clamp(1.75rem, 8vw, 2.125rem);
+    }
+
+    .decision-layer__description {
+        font-size: clamp(0.875rem, 4vw, 1rem);
+    }
+
+    .decision-layer__steps {
+        gap: clamp(2rem, 8vw, 2.5rem);
+        margin-top: 2.5rem;
+    }
+}
+
+
+/* =========================================================
+   OPERATING UNDER HAZARD
+   ========================================================= */
+
+.hazard-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 80px 5%;
+
+    background: var(--color-background-primary);
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.hazard-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.hazard-section__eyebrow {
+    width: fit-content;
+
+    padding: 6px 10px;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 6px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.hazard-section__heading {
+    width: 100%;
+
+    margin: 16px 0 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.hazard-section__cards {
+    width: 100%;
+
+    margin-top: 56px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.hazard-card {
+    min-width: 0;
+
+    min-height: 272px;
+    box-sizing: border-box;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-background-primary);
+
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.hazard-card__top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.hazard-card__icon {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.hazard-card__number {
+    color: #94A3B8;
+
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.hazard-card__heading {
+    margin: 20px 0 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.hazard-card__description {
+    width: 100%;
+    max-width: 32rem;
+
+    margin: 12px 0 0;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+
+
+/* =========================================================
+   HAZARD SECTION RESPONSIVE
+   ========================================================= */
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .hazard-section {
+        padding-left: clamp(32px, 5vw, 64px);
+        padding-right: clamp(32px, 5vw, 64px);
+    }
+
+    .hazard-section__cards {
+        gap: clamp(20px, 2.5vw, 24px);
+    }
+
+    .hazard-card {
+        padding: clamp(24px, 3vw, 32px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .hazard-section {
+        padding-top: clamp(64px, 8vw, 80px);
+        padding-bottom: clamp(64px, 8vw, 80px);
+    }
+
+    .hazard-section__heading {
+        font-size: clamp(30px, 4.5vw, 36px);
+    }
+
+    .hazard-section__cards {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+
+        margin-top: 40px;
+    }
+
+    .hazard-card {
+        min-height: 0;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .hazard-section {
+        padding:
+            clamp(56px, 10vw, 72px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .hazard-section__eyebrow {
+        font-size: 10px;
+    }
+
+    .hazard-section__heading {
+        margin-top: 14px;
+
+        font-size: clamp(28px, 8vw, 34px);
+
+        line-height: 110%;
+    }
+
+    .hazard-section__cards {
+        margin-top: 32px;
+
+        gap: 20px;
+    }
+
+    .hazard-card {
+        padding: clamp(24px, 6vw, 32px);
+    }
+
+    .hazard-card__heading {
+        font-size: 18px;
+    }
+
+    .hazard-card__description {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================================================
+   HOW DECISIO WORKS
+   ========================================================= */
+
+.process-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 80px 5%;
+
+    background: #F8FAFC;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.process-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.process-section__eyebrow {
+    width: fit-content;
+
+    padding: 6px 10px;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 6px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.process-section__heading {
+    margin: 16px 0 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   STEPS
+   ========================================================= */
+.process-section__steps {
+    width: 100%;
+
+    margin-top: 48px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr)
+        auto
+        minmax(0, 1fr);
+
+    gap: 16px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   PROCESS CARD
+   ========================================================= */
+
+.process-card {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.process-card__top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.process-card__icon {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   STEP NUMBER
+   ========================================================= */
+
+.process-card__number {
+    color: #2563EB;
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 100%;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.process-card__heading {
+    margin: 16px 0 0;
+
+    color: #0F172A;
+
+    font-family: var(--font-primary);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.process-card__description {
+    width: 100%;
+
+    margin: 12px 0 0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   ARROW
+   ========================================================= */
+
+.process-section__arrow {
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+
+    flex-shrink: 0;
+}
+
+.process-section__arrow img {
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   PROCESS SECTION RESPONSIVE
+   ========================================================= */
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .process-section {
+        padding-left: clamp(32px, 5vw, 64px);
+        padding-right: clamp(32px, 5vw, 64px);
+    }
+
+    .process-card {
+        padding: clamp(20px, 2.5vw, 24px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .process-section {
+        padding-top: clamp(64px, 8vw, 80px);
+        padding-bottom: clamp(64px, 8vw, 80px);
+    }
+
+    .process-section__heading {
+        font-size: clamp(30px, 4.5vw, 36px);
+    }
+
+    .process-section__steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 24px;
+
+        margin-top: 40px;
+    }
+
+    .process-section__arrow {
+        display: none;
+    }
+
+    .process-card {
+        min-height: 203px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .process-section {
+        padding:
+            clamp(56px, 10vw, 72px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .process-section__eyebrow {
+        font-size: 10px;
+    }
+
+    .process-section__heading {
+        margin-top: 14px;
+
+        font-size: clamp(28px, 8vw, 34px);
+
+        line-height: 110%;
+    }
+
+    .process-section__steps {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-top: 32px;
+    }
+
+    .process-card {
+        min-height: 0;
+
+        padding: clamp(20px, 6vw, 24px);
+    }
+
+    .process-card__heading {
+        font-size: 18px;
+    }
+
+    .process-card__description {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   DECISIO STANDARD
+   ========================================================= */
+
+.standard-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: clamp(64px, 6.95vw, 100px)
+             clamp(24px, 5.56vw, 80px);
+
+    background: #FFFFFF;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.standard-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.standard-section__eyebrow {
+    width: fit-content;
+
+    margin: 0;
+    padding: 6px 10px;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 6px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.standard-section__heading {
+    width: 100%;
+
+    margin: 16px 0 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: clamp(30px, 2.5vw, 36px);
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.standard-section__grid {
+    width: 100%;
+
+    margin-top: clamp(40px, 3.9vw, 56px);
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.standard-card {
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.standard-card__top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.standard-card__heading {
+    min-width: 0;
+
+    margin: 0;
+
+    color: #0F172A;
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARD TAG
+   ========================================================= */
+
+.standard-card__tag {
+    flex-shrink: 0;
+
+    padding: 4px 8px;
+
+    background: #EEFBF7;
+    color: #10B981;
+
+    border-radius: 4px;
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.standard-card__description {
+    width: 100%;
+
+    margin: 16px 0 0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .standard-section {
+        padding-left: clamp(32px, 5vw, 64px);
+        padding-right: clamp(32px, 5vw, 64px);
+    }
+
+    .standard-card {
+        padding: clamp(24px, 3vw, 32px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .standard-section {
+        padding-top: clamp(64px, 8vw, 80px);
+        padding-bottom: clamp(64px, 8vw, 80px);
+    }
+
+    .standard-section__grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        margin-top: 40px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .standard-section {
+        padding:
+            clamp(56px, 10vw, 72px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .standard-section__eyebrow {
+        font-size: 10px;
+    }
+
+    .standard-section__heading {
+        margin-top: 14px;
+
+        font-size: clamp(28px, 8vw, 34px);
+        line-height: 110%;
+    }
+
+    .standard-section__grid {
+        gap: 16px;
+
+        margin-top: 32px;
+    }
+
+    .standard-card {
+        padding: clamp(20px, 6vw, 28px);
+    }
+
+    .standard-card__heading {
+        font-size: 18px;
+    }
+
+    .standard-card__description {
+        margin-top: 12px;
+
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   SYSTEM INTEGRITY
+   ========================================================= */
+
+.integrity-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: clamp(56px, 5.56vw, 80px);
+
+    background: #F8FAFC;
+
+    border-top: 1px solid #BFDBFE;
+    border-bottom: 1px solid #BFDBFE;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.integrity-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.integrity-section__eyebrow {
+    width: fit-content;
+
+    margin: 0;
+    padding: 6px 10px;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 6px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.integrity-section__heading {
+    width: 100%;
+
+    margin: 16px 0 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: clamp(28px, 2.22vw, 32px);
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   FEATURE ROW
+   ========================================================= */
+
+.integrity-section__features {
+    width: 100%;
+
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: clamp(12px, 1.4vw, 20px);
+}
+
+
+/* =========================================================
+   FEATURE CARD
+   ========================================================= */
+
+.integrity-feature {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    min-height: 46px;
+
+    padding: 14px clamp(14px, 1.7vw, 24px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   FEATURE ICON
+   ========================================================= */
+
+.integrity-feature__icon {
+    width: 18px;
+    height: 18px;
+
+    flex: 0 0 18px;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   FEATURE TEXT
+   ========================================================= */
+
+.integrity-feature__text {
+    min-width: 0;
+
+    margin: 0;
+
+    color: #0F172A;
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .integrity-section {
+        padding-left: clamp(32px, 5vw, 64px);
+        padding-right: clamp(32px, 5vw, 64px);
+    }
+
+    .integrity-section__features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+    }
+
+    .integrity-feature {
+        justify-content: center;
+
+        padding-left: clamp(16px, 3vw, 24px);
+        padding-right: clamp(16px, 3vw, 24px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .integrity-section {
+        padding-top: clamp(56px, 8vw, 72px);
+        padding-bottom: clamp(56px, 8vw, 72px);
+    }
+
+    .integrity-section__features {
+        margin-top: 32px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .integrity-section {
+        padding:
+            clamp(48px, 10vw, 64px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .integrity-section__eyebrow {
+        font-size: 10px;
+    }
+
+    .integrity-section__heading {
+        margin-top: 14px;
+
+        font-size: clamp(26px, 8vw, 32px);
+        line-height: 110%;
+    }
+
+    .integrity-section__features {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-top: 28px;
+    }
+
+    .integrity-feature {
+        justify-content: flex-start;
+
+        padding:
+            14px
+            clamp(16px, 5vw, 24px);
+    }
+
+    .integrity-feature__text {
+        white-space: normal;
+    }
+
+}
+
+
+/* =========================================================
+   SEE IT IN ACTION
+   ========================================================= */
+
+.demo-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding:
+        clamp(64px, 6.95vw, 100px)
+        clamp(24px, 5.56vw, 80px);
+
+    background: #0A1628;
+
+    border-top: 1px solid #2563EB;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.demo-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.demo-section__eyebrow {
+    width: fit-content;
+
+    margin: 0;
+    padding: 6px 10px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    background: #0F1F38;
+    color: #2563EB;
+
+    border: 1px solid #1A3359;
+    border-radius: 6px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   EYEBROW DOT
+   ========================================================= */
+
+.demo-section__eyebrow-dot {
+    width: 8px;
+    height: 8px;
+
+    flex: 0 0 8px;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.demo-section__heading {
+    width: 100%;
+    max-width: 900px;
+
+    margin: -8px 0 0;
+
+    color: #FFFFFF;
+
+    font-family: var(--font-primary);
+    font-size: clamp(32px, 3.06vw, 44px);
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HEADING ACCENT
+   ========================================================= */
+
+.demo-section__heading-accent {
+    color: #2563EB;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.demo-section__description {
+    width: 100%;
+    max-width: 720px;
+
+    margin: -8px 0 0;
+
+    color: #94A3B8;
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   VIDEO CONTAINER
+   ========================================================= */
+
+.demo-section__video {
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+
+    aspect-ratio: 900 / 506;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   VIDEO SVG / IMAGE
+   ========================================================= */
+
+.demo-section__video img,
+.demo-section__video svg,
+.demo-section__video > video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+/* =========================================================
+   VIDEO SVG / IMAGE
+   ========================================================= */
+
+.demo-section__video img,
+.demo-section__video svg,
+.demo-section__video > video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+/* =========================================================
+   PLAY ICON
+   ========================================================= */
+
+/* .demo-section__play::after {
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    margin-left: 4px;
+
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 14px solid #FFFFFF;
+} */
+
+
+/* =========================================================
+   VIDEO METADATA
+   ========================================================= */
+
+.demo-section__video-meta {
+    position: absolute;
+    left: clamp(16px, 2vw, 24px);
+    right: clamp(16px, 2vw, 24px);
+    bottom: clamp(14px, 2vw, 20px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+
+    color: #94A3B8;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.demo-section__cta {
+    height: 42px;
+
+    box-sizing: border-box;
+
+    margin-top: 8px;
+
+    padding:
+        12px
+        24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    background: #2563EB;
+    color: #FFFFFF;
+
+    border: 1px solid #2563EB;
+    border-radius: 8px;
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   CTA ARROW
+   ========================================================= */
+
+
+
+
+/* =========================================================
+   SUPPORTING TEXT
+   ========================================================= */
+
+.demo-section__supporting {
+    margin: -16px 0 0;
+
+    color: #738094;
+
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .demo-section {
+        padding-left: clamp(32px, 5vw, 64px);
+        padding-right: clamp(32px, 5vw, 64px);
+    }
+
+    .demo-section__video {
+        max-width: 860px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .demo-section {
+        padding-top: clamp(64px, 8vw, 80px);
+        padding-bottom: clamp(64px, 8vw, 80px);
+    }
+
+    .demo-section__content {
+        gap: 28px;
+    }
+
+    .demo-section__heading {
+        max-width: 700px;
+
+        font-size: clamp(30px, 5vw, 40px);
+    }
+
+    .demo-section__description {
+        max-width: 620px;
+
+        font-size: clamp(14px, 2vw, 16px);
+    }
+
+    .demo-section__video {
+        margin-top: 4px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .demo-section {
+        padding:
+            clamp(56px, 10vw, 72px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .demo-section__content {
+        gap: 24px;
+    }
+
+    .demo-section__eyebrow {
+        font-size: 10px;
+    }
+
+    .demo-section__heading {
+        margin-top: -4px;
+
+        font-size: clamp(28px, 8vw, 36px);
+
+        line-height: 110%;
+    }
+
+    .demo-section__description {
+        margin-top: -4px;
+
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .demo-section__video {
+        margin-top: 4px;
+
+        border-radius: 12px;
+    }
+
+    .demo-section__play {
+        width: 56px;
+        height: 56px;
+    }
+
+
+    .demo-section__video-meta {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+
+        font-size: 9px;
+    }
+
+    .demo-section__cta {
+        margin-top: 4px;
+    }
+
+    .demo-section__supporting {
+        margin-top: -12px;
+
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+}

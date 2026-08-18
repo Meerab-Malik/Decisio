@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@600&display=swap');
+
+:root {
+
+    /* =========================
+       BRAND
+       ========================= */
+
+    --color-brand-primary: #2563EB;
+
+
+    /* =========================
+       TEXT
+       ========================= */
+
+    --color-text-heading: #0B1F3A;
+    --color-text-primary: #0F172A;
+    --color-text-secondary: #475569;
+    --color-text-muted: #94A3B8;
+    --color-text-inverse: #FFFFFF;
+
+
+    /* =========================
+       ACCENT
+       ========================= */
+
+    --color-accent-green: #10B981;
+    --color-accent-orange: #F59E0B;
+    --color-accent-red: #EF4444;
+
+
+    /* =========================
+       BACKGROUNDS
+       ========================= */
+
+    --color-background-primary: #FFFFFF;
+    --color-background-blue: #EFF6FF;
+    --color-background-green: #EEFBF7;
+    --color-background-yellow: #FFFBEB;
+    --color-background-red: #FEF2F2;
+
+    --color-background-dark: #0A1628;
+    --color-background-navy: #0F1F38;
+    --color-background-footer: #05111F;
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    --color-footer-text: #94A3B8;
+    --color-footer-border: #152E4E;
+
+
+    /* =========================
+       FONTS
+       ========================= */
+
+    --font-primary: "Geist", sans-serif;
+    --font-mono: "Geist Mono", monospace;
+
+
+    /* =========================
+       SPACING
+       ========================= */
+
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-48: 48px;
+    --space-56: 56px;
+    --space-64: 64px;
+    --space-80: 80px;
+    --space-100: 100px;
+    --space-120: 120px;
+
+
+    /* =========================
+       LAYOUT
+       ========================= */
+
+    --page-padding: 80px;
+    --radius-button: 8px;
+
+
+
+    /* =========================
+   CTA
+   ========================= */
+
+    --gradient-cta: linear-gradient(90deg, #05111F 0%, #152E4E 100%);
+
+}

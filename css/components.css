@@ -1,0 +1,942 @@
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px var(--page-padding);
+
+    background: var(--color-background-primary);
+    border-bottom: 1px solid #E2E8F0;
+}
+
+
+/* =========================
+   LOGO GROUP
+   ========================= */
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+}
+
+
+.navbar__logo-image {
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+}
+
+
+.navbar__brand {
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   AI BADGE
+   ========================= */
+
+.navbar__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2px 6px;
+
+    background: var(--color-background-blue);
+    color: var(--color-brand-primary);
+
+    border-radius: 4px;
+
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+/* =========================
+   NAVIGATION LINKS
+   ========================= */
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.navbar__links a {
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.navbar__links a:hover {
+    color: var(--color-brand-primary);
+}
+
+
+/* =========================
+   REQUEST A DEMO
+   ========================= */
+
+.navbar__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 158px;
+    height: 42px;
+
+    padding: 12px 24px;
+
+    background: var(--color-brand-primary);
+    color: var(--color-text-inverse);
+
+    border-radius: var(--radius-button);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   MOBILE MENU
+   ========================= */
+
+/* =========================
+   MOBILE MENU
+   ========================= */
+
+.navbar__menu {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: var(--color-text-heading);
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* Mobile menu itself */
+
+.navbar__mobile {
+    display: none;
+}
+
+
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 80px clamp(24px, 5vw, 80px) 40px;
+
+    background: var(--color-background-footer);
+}
+
+
+/* =========================
+   FOOTER TOP CONTENT
+   ========================= */
+
+.footer__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: clamp(80px, 10vw, 160px);
+}
+
+
+/* =========================
+   FOOTER BRAND
+   ========================= */
+
+
+
+.footer__brand {
+    width: clamp(220px, 24vw, 300px);
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 0 1 300px;
+}
+
+
+.footer__brand-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.footer__logo {
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 8px;
+}
+
+
+.footer__brand-text {
+    color: var(--color-text-inverse);
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+
+.footer__description {
+    margin: 16px 0 0;
+
+    color: var(--color-footer-text);
+
+    font-family: var(--font-primary);
+    font-size: clamp(13px, 1.5vw, 16px);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+/* =========================
+   FOOTER LINK COLUMNS
+   ========================= */
+
+.footer__column {
+    width: auto;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    flex: 1 1 0;
+}
+
+.footer__column h3 {
+    margin: 0;
+
+    color: var(--color-text-inverse);
+
+    font-family: var(--font-mono);
+    font-size: clamp(11px, 1.2vw, 13px);
+    font-weight: 600;
+    line-height: 100%;
+
+    letter-spacing: 0.15em;
+
+    text-transform: uppercase;
+}
+
+
+.footer__column a {
+    color: var(--color-footer-text);
+    white-space: nowrap;
+
+
+    font-family: var(--font-primary);
+    font-size: clamp(13px, 1.4vw, 15px);
+    font-weight: 400;
+    line-height: 100%;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+
+.footer__column a:hover {
+    color: var(--color-text-inverse);
+}
+
+
+/* =========================
+   FOOTER DIVIDER
+   ========================= */
+
+.footer__divider {
+    width: 100%;
+    max-width: 1280px;
+
+    height: 1px;
+
+    margin: 64px auto 0;
+
+    background: var(--color-footer-border);
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+   ========================= */
+
+.footer__bottom {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 24px;
+}
+
+
+.footer__copyright {
+    margin: 0;
+
+    color: var(--color-footer-text);
+
+    font-family: var(--font-primary);
+    font-size: clamp(12px, 1.3vw, 14px);
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+/* =========================
+   SOCIAL ICONS
+   ========================= */
+
+.footer__socials {
+    width: 86px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.footer__socials a {
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+
+.footer__socials img {
+    display: block;
+
+    width: 18px;
+    height: 18px;
+}
+
+
+.footer__socials a:hover {
+    opacity: 0.8;
+}
+
+/* =========================================================
+   DARK CTA BANNER
+   ========================================================= */
+
+.cta-banner {
+    width: 100%;
+
+    padding: clamp(80px, 10vw, 120px) 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--gradient-cta);
+}
+
+/* =========================================================
+   CTA CONTENT
+   ========================================================= */
+
+.cta-banner__content {
+    width: 100%;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CTA TEXT
+   ========================================================= */
+
+.cta-banner__text {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   CTA HEADING
+   ========================================================= */
+
+.cta-banner__heading {
+    width: 100%;
+
+    max-width: 800px;
+    margin: 0;
+
+    color: var(--color-text-inverse);
+
+    font-family: var(--font-primary);
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 120%;
+
+    text-align: center;
+}
+
+/* =========================================================
+   DARK CTA BANNER
+   ========================================================= */
+
+.cta-banner {
+    width: 100%;
+
+    padding: clamp(80px, 10vw, 120px) 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--gradient-cta);
+}
+
+
+/* =========================================================
+   CTA CONTENT
+   ========================================================= */
+
+.cta-banner__content {
+    width: 100%;
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 24px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CTA TEXT
+   ========================================================= */
+
+.cta-banner__text {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   CTA HEADING
+   ========================================================= */
+
+.cta-banner__heading {
+    width: 100%;
+
+    margin: 0;
+
+    color: var(--color-text-inverse);
+
+    font-family: var(--font-primary);
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 120%;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CTA DESCRIPTION
+   ========================================================= */
+
+.cta-banner__description {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0;
+
+    color: var(--color-text-muted);
+
+    font-family: var(--font-primary);
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: 400;
+    line-height: 150%;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.cta-banner__button {
+    min-width: 137px;
+    min-height: 42px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 24px;
+
+    background: var(--color-text-inverse);
+    color: var(--color-text-heading);
+
+    border: none;
+    border-radius: var(--radius-button);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   COMPONENTS RESPONSIVE
+   ========================================================= */
+
+
+
+   
+
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1200px
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding-left: clamp(32px, 5vw, 80px);
+        padding-right: clamp(32px, 5vw, 80px);
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding-left: clamp(32px, 5vw, 80px);
+        padding-right: clamp(32px, 5vw, 80px);
+    }
+
+    .footer__content {
+        gap: clamp(40px, 6vw, 80px);
+    }
+
+    .footer__brand {
+        flex-basis: clamp(220px, 22vw, 300px);
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* NAVBAR */
+
+    .navbar__links,
+    .navbar__cta {
+        display: none;
+    }
+
+    .navbar__menu {
+        display: flex;
+    }
+
+    .navbar__mobile {
+        top: 80px;
+
+        left: clamp(24px, 5vw, 40px);
+        right: clamp(24px, 5vw, 40px);
+    }
+
+
+
+
+
+/* =========================================================
+   CTA RESPONSIVE
+   ========================================================= */
+
+/* TABLET / SMALL DESKTOP
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .cta-banner {
+        min-height: 100vh;
+
+        padding: clamp(72px, 10vw, 100px) 6%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-banner__content {
+        width: 100%;
+        max-width: 800px;
+
+        gap: clamp(24px, 4vw, 32px);
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-banner__heading {
+        font-size: clamp(32px, 5vw, 42px);
+    }
+
+    .cta-banner__description {
+        max-width: 700px;
+
+        font-size: clamp(15px, 2vw, 17px);
+    }
+
+}
+
+
+/* SMALL TABLET
+   <= 800px
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .cta-banner {
+        min-height: 100vh;
+
+        padding: 10vh 7%;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-banner__content {
+        max-width: 720px;
+
+        gap: 32px;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-banner__heading {
+        font-size: clamp(34px, 6vw, 44px);
+    }
+
+    .cta-banner__description {
+        max-width: 620px;
+
+        font-size: clamp(15px, 2.2vw, 17px);
+    }
+
+}
+
+
+/* MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .cta-banner {
+        min-height: auto;
+
+        padding: 15vh 8%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-banner__content {
+        width: 100%;
+        max-width: 100%;
+
+        gap: 32px;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-banner__heading {
+        font-size: clamp(32px, 9vw, 40px);
+        line-height: 120%;
+    }
+
+    .cta-banner__description {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: clamp(15px, 4vw, 17px);
+        line-height: 150%;
+    }
+
+    .cta-banner__button {
+        min-height: 44px;
+
+        font-size: 15px;
+    }
+
+}
+
+
+
+    /* FOOTER */
+
+    .footer {
+        padding:
+            clamp(56px, 8vw, 80px)
+            clamp(24px, 6vw, 64px)
+            clamp(32px, 5vw, 40px);
+
+        overflow-x: hidden;
+    }
+
+    .footer__content {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: clamp(32px, 5vw, 48px);
+    }
+
+    .footer__brand {
+        width: 100%;
+
+        grid-column: 1 / -1;
+
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__brand-name {
+        justify-content: center;
+    }
+
+    .footer__description {
+        width: min(100%, 32rem);
+
+        font-size: clamp(14px, 1.8vw, 16px);
+
+        text-align: center;
+    }
+
+    .footer__column {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .footer__column h3 {
+        font-size: clamp(12px, 1.6vw, 14px);
+    }
+
+    .footer__column a {
+        font-size: clamp(14px, 1.7vw, 16px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding-left: clamp(20px, 6vw, 32px);
+        padding-right: clamp(20px, 6vw, 32px);
+    }
+
+    .navbar__mobile {
+        left: clamp(20px, 6vw, 32px);
+        right: clamp(20px, 6vw, 32px);
+    }
+
+
+    /* CTA */
+
+    .cta-banner {
+        min-height: 100vh;
+        box-sizing: border-box;
+
+        padding:
+            clamp(64px, 12vw, 80px)
+            clamp(20px, 6vw, 32px);
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-banner__content {
+        width: 100%;
+        max-width: 100%;
+
+        align-items: center;
+        justify-content: center;
+
+        gap: clamp(24px, 6vw, 32px);
+    }
+
+    .cta-banner__heading {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .cta-banner__description {
+        max-width: 100%;
+
+        font-size: clamp(14px, 4vw, 16px);
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding:
+            clamp(48px, 10vw, 64px)
+            clamp(20px, 6vw, 32px)
+            clamp(28px, 6vw, 40px);
+    }
+
+    .footer__content {
+        column-gap: clamp(20px, 7vw, 32px);
+        row-gap: clamp(32px, 8vw, 48px);
+    }
+
+    .footer__brand-text {
+        font-size: clamp(18px, 5vw, 22px);
+    }
+
+    .footer__description {
+        font-size: clamp(13px, 3.5vw, 15px);
+    }
+
+    .footer__column h3 {
+        font-size: clamp(11px, 3vw, 13px);
+    }
+
+    .footer__column a {
+        font-size: clamp(13px, 3.5vw, 15px);
+
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+
+        align-items: center;
+        text-align: center;
+
+        gap: clamp(16px, 5vw, 20px);
+    }
+}
