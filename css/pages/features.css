@@ -1,0 +1,1036 @@
+/* =========================================================
+   FEATURES HERO
+   ========================================================= */
+
+.features-hero {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    padding:
+        clamp(72px, 7vw, 100px)
+        clamp(24px, 5.55vw, 80px)
+        clamp(72px, 7vw, 100px);
+
+    background: linear-gradient(
+        90deg,
+        #EFF6FF 0%,
+        #FFFFFF 80%
+    );
+
+}
+
+
+/* =========================================================
+   FEATURES HERO CONTENT
+   ========================================================= */
+
+.features-hero__content {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.features-hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 26px;
+
+    padding:
+        6px
+        12px;
+
+    box-sizing: border-box;
+
+    background: var(--color-background-blue);
+    color: var(--color-brand-primary);
+
+    border-radius: 99px;
+
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.features-hero__heading {
+    width: 100%;
+    max-width: 850px;
+
+    margin: clamp(28px, 3vw, 40px) 0 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: clamp(38px, 3.75vw, 54px);
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: -0.04em;
+
+    text-align: center;
+}
+
+
+/*
+ * Forces "Decisions" onto its own line on desktop
+ * without relying on a <br>.
+ */
+
+.features-hero__heading-line {
+    display: block;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.features-hero__description {
+    width: 100%;
+    max-width: 800px;
+
+    margin: clamp(24px, 2.2vw, 32px) 0 0;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: clamp(15px, 1.25vw, 18px);
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .features-hero {
+        padding:
+            clamp(64px, 10vw, 88px)
+            clamp(24px, 6vw, 56px)
+            clamp(64px, 10vw, 88px);
+    }
+
+
+    .features-hero__content {
+        max-width: 760px;
+    }
+
+
+    .features-hero__heading {
+        max-width: 700px;
+
+        font-size: clamp(38px, 6vw, 48px);
+        line-height: 112%;
+    }
+
+
+    .features-hero__description {
+        max-width: 500px;
+
+        font-size: clamp(15px, 2vw, 17px);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   <= 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .features-hero {
+        padding:
+            clamp(56px, 10vw, 72px)
+            clamp(20px, 6vw, 40px)
+            clamp(56px, 10vw, 72px);
+    }
+
+
+    .features-hero__eyebrow {
+        font-size: 10px;
+    }
+
+
+    .features-hero__heading {
+        max-width: 620px;
+
+        margin-top: clamp(24px, 5vw, 32px);
+
+        font-size: clamp(34px, 7vw, 44px);
+    }
+
+
+    .features-hero__description {
+        max-width: 500px;
+
+        margin-top: clamp(20px, 4vw, 28px);
+
+        font-size: clamp(15px, 2.5vw, 17px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .features-hero {
+        padding:
+            clamp(52px, 12vw, 68px)
+            clamp(20px, 6vw, 28px)
+            clamp(56px, 12vw, 72px);
+    }
+
+
+    .features-hero__content {
+        width: 100%;
+    }
+
+
+    .features-hero__eyebrow {
+        min-height: 24px;
+
+        padding:
+            5px
+            10px;
+
+        font-size: 9px;
+        letter-spacing: 0.07em;
+    }
+
+
+    .features-hero__heading {
+        max-width: 100%;
+
+        margin-top: clamp(22px, 6vw, 28px);
+
+        font-size: clamp(32px, 9vw, 40px);
+        line-height: 112%;
+        letter-spacing: -0.035em;
+    }
+
+
+    .features-hero__description {
+        max-width: 100%;
+
+        margin-top: clamp(20px, 5vw, 26px);
+
+        font-size: clamp(14px, 4vw, 16px);
+        line-height: 155%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .features-hero {
+        padding:
+            48px
+            18px
+            56px;
+    }
+
+
+    .features-hero__heading {
+        font-size: clamp(30px, 9.5vw, 36px);
+    }
+
+
+    .features-hero__description {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   FEATURES GRID
+   ========================================================= */
+
+.features-grid-section {
+    width: 100%;
+    padding:
+        clamp(40px, 4vw, 56px)
+        clamp(24px, 5.55vw, 80px)
+        clamp(72px, 7vw, 100px);
+
+    background: var(--color-background-primary);
+
+    border-left: 1px solid var(--color-brand-primary);
+}
+
+
+.features-grid {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: clamp(20px, 2.8vw, 40px);
+}
+
+
+/* =========================================================
+   FEATURE CARD
+   ========================================================= */
+
+.feature-card {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: clamp(24px, 2.2vw, 32px);
+
+    background: #FFFFFF;
+
+    border-left: 4px solid #E2E8F0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    box-shadow:
+        0 2px 8px rgba(15, 23, 42, 0.04);
+
+    transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+}
+
+
+.feature-card:hover {
+    border-left-color: var(--color-brand-primary);
+
+    box-shadow:
+        0 6px 18px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.feature-card__top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.feature-card__icon {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 40px;
+
+    display: block;
+}
+
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.feature-card__number {
+    flex: 0 0 auto;
+
+    margin-top: 2px;
+
+    color: #94A3B8;
+
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.feature-card__title {
+    margin:
+        clamp(20px, 2vw, 24px)
+        0
+        0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: clamp(18px, 1.4vw, 20px);
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.feature-card__description {
+    margin:
+        clamp(14px, 1.4vw, 18px)
+        0
+        0;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .features-grid-section {
+        padding:
+            clamp(40px, 6vw, 56px)
+            clamp(24px, 6vw, 56px)
+            clamp(64px, 8vw, 88px);
+    }
+
+
+    .features-grid {
+        gap: 24px;
+    }
+
+
+    .feature-card {
+        padding: clamp(22px, 3vw, 28px);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .features-grid-section {
+        padding:
+            40px
+            clamp(20px, 5vw, 40px)
+            64px;
+    }
+
+
+    .features-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .feature-card {
+        padding: 24px;
+    }
+
+
+    .feature-card__title {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .features-grid-section {
+        padding:
+            32px
+            18px
+            56px;
+    }
+
+
+    .features-grid {
+        gap: 16px;
+    }
+
+
+    .feature-card {
+        padding: 20px;
+    }
+
+
+    .feature-card__top {
+        gap: 12px;
+    }
+
+
+    .feature-card__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .feature-card__title {
+        margin-top: 18px;
+
+        font-size: 18px;
+        line-height: 115%;
+    }
+
+
+    .feature-card__description {
+        margin-top: 12px;
+
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .features-grid-section {
+        padding:
+            28px
+            16px
+            48px;
+    }
+
+
+    .feature-card {
+        padding: 18px;
+    }
+
+}
+/* =========================================================
+   CONTROL ROOM SECTION
+   ========================================================= */
+
+.control-room-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding:
+        clamp(72px, 6.95vw, 100px)
+        clamp(24px, 5.55vw, 80px);
+
+    background: #F8FAFC;
+}
+
+
+.control-room-section__content {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: clamp(40px, 3.9vw, 56px);
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.control-room-section__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 156px;
+    height: 26px;
+
+    box-sizing: border-box;
+
+    padding: 6px 12px;
+
+    background: var(--color-background-blue);
+    color: var(--color-brand-primary);
+
+    border-radius: 99px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.control-room-section__heading {
+    margin: 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: clamp(30px, 2.5vw, 36px);
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   SVG
+   ========================================================= */
+
+.control-room-section__image {
+    display: block;
+
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+   /* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1440px) {
+
+    .control-room-section {
+        padding:
+            clamp(100px, 7vw, 120px)
+            clamp(80px, 5.55vw, 120px)
+            clamp(100px, 7vw, 120px);
+    }
+
+}
+
+
+/* =========================================================
+   DESKTOP / TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .control-room-section {
+        padding:
+            clamp(80px, 8vw, 100px)
+            clamp(40px, 5.55vw, 80px)
+            clamp(80px, 8vw, 100px);
+    }
+
+
+    .control-room-section__content {
+        gap: clamp(40px, 4vw, 56px);
+    }
+
+
+    .control-room-section__heading {
+        font-size: clamp(32px, 3.5vw, 36px);
+        line-height: 105%;
+    }
+
+
+    .control-room-section__image {
+        width: min(100%, 1280px);
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .control-room-section {
+        padding:
+            clamp(64px, 8vw, 88px)
+            clamp(24px, 6vw, 56px)
+            clamp(72px, 8vw, 88px);
+    }
+
+
+    .control-room-section__content {
+        gap: clamp(36px, 4vw, 48px);
+    }
+
+
+    .control-room-section__heading {
+        font-size: clamp(30px, 4.5vw, 34px);
+        line-height: 105%;
+    }
+
+
+    .control-room-section__image {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .control-room-section {
+        padding:
+            clamp(56px, 10vw, 72px)
+            clamp(20px, 6vw, 28px)
+            clamp(64px, 10vw, 80px);
+    }
+
+
+    .control-room-section__content {
+        gap: clamp(32px, 6vw, 40px);
+    }
+
+
+    .control-room-section__heading {
+        font-size: clamp(28px, 8vw, 32px);
+        line-height: 110%;
+    }
+
+
+    .control-room-section__image {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .control-room-section {
+        padding:
+            clamp(48px, 12vw, 56px)
+            18px
+            clamp(56px, 12vw, 64px);
+    }
+
+
+    .control-room-section__content {
+        gap: clamp(28px, 7vw, 34px);
+    }
+
+
+    .control-room-section__heading {
+        font-size: clamp(26px, 8vw, 28px);
+    }
+
+
+    .control-room-section__image {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* =========================================================
+   DECISION STATS
+   ========================================================= */
+
+.decision-stats {
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(32px, 6vw, 96px);
+
+    padding:
+        clamp(56px, 5.55vw, 80px)
+        clamp(24px, 5.55vw, 80px);
+
+    background: var(--color-background-primary);
+}
+
+
+/* =========================================================
+   STAT ITEM
+   ========================================================= */
+
+.decision-stats__item {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: clamp(12px, 1.1vw, 16px);
+
+    flex: 1 1 0;
+}
+
+
+/* =========================================================
+   STAT ICON
+   ========================================================= */
+
+.decision-stats__icon {
+    width: clamp(44px, 3.9vw, 56px);
+    height: clamp(44px, 3.9vw, 56px);
+
+    flex: 0 0 auto;
+
+    display: block;
+
+    border-radius: 50%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+   ========================================================= */
+
+.decision-stats__content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(6px, 0.55vw, 8px);
+}
+
+
+/* =========================================================
+   STAT HEADING
+   ========================================================= */
+
+.decision-stats__heading {
+    margin: 0;
+
+    color: var(--color-text-heading);
+
+    font-family: var(--font-primary);
+    font-size: clamp(14px, 1.11vw, 16px);
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   STAT DESCRIPTION
+   ========================================================= */
+
+.decision-stats__description {
+    max-width: 280px;
+
+    margin: 0;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+    font-size: clamp(12px, 0.97vw, 14px);
+    font-weight: 400;
+    line-height: 135%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .decision-stats {
+        gap: clamp(24px, 4vw, 48px);
+
+        padding:
+            clamp(52px, 6vw, 72px)
+            clamp(28px, 5vw, 56px);
+    }
+
+
+    .decision-stats__item {
+        gap: clamp(10px, 1.5vw, 14px);
+    }
+
+
+    .decision-stats__description {
+        max-width: 220px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .decision-stats {
+        gap: clamp(24px, 5vw, 40px);
+
+        padding:
+            clamp(48px, 7vw, 64px)
+            clamp(24px, 5vw, 48px);
+    }
+
+
+    .decision-stats__icon {
+        width: clamp(42px, 6vw, 52px);
+        height: clamp(42px, 6vw, 52px);
+    }
+
+
+    .decision-stats__heading {
+        font-size: clamp(13px, 2vw, 15px);
+    }
+
+
+    .decision-stats__description {
+        font-size: clamp(11px, 1.7vw, 13px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .decision-stats {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: clamp(28px, 7vw, 40px);
+
+        padding:
+            clamp(48px, 10vw, 64px)
+            clamp(20px, 6vw, 32px);
+    }
+
+
+    .decision-stats__item {
+        width: 100%;
+    }
+
+
+    .decision-stats__description {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .decision-stats {
+        gap: 28px;
+
+        padding:
+            44px
+            18px;
+    }
+
+
+    .decision-stats__icon {
+        width: 44px;
+        height: 44px;
+    }
+
+}

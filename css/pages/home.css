@@ -177,7 +177,7 @@
 
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 
     gap: clamp(20px, 5vw, 48px);
 

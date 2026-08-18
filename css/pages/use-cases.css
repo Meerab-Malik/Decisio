@@ -1,0 +1,1686 @@
+/* =========================================================
+   USE CASES HERO
+   ========================================================= */
+
+
+   
+.use-cases-hero {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding:
+        clamp(64px, 7vw, 100px)
+        clamp(24px, 5.5vw, 80px);
+
+    background: linear-gradient(
+        90deg,
+        #EFF6FF 0%,
+        #FFFFFF 80%
+    );
+}
+
+
+.use-cases-hero__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+   ========================================================= */
+
+.use-cases-hero__eyebrow {
+    width: fit-content;
+
+    padding:
+        6px
+        12px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 999px;
+
+    font-family: var(--font-primary);
+    font-size: clamp(12px, 1vw, 14px);
+    font-weight: 500;
+    line-height: 1.4;
+
+    letter-spacing: 0.04em;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HERO HEADING
+   ========================================================= */
+
+.use-cases-hero__heading {
+    width: 100%;
+    max-width: 1000px;
+
+    margin:
+        clamp(20px, 2vw, 28px)
+        0
+        0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: clamp(38px, 3.75vw, 54px);
+    font-weight: 800;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.use-cases-hero__description {
+    width: 100%;
+    max-width: 900px;
+
+    margin:
+        clamp(16px, 1.7vw, 24px)
+        0
+        0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: clamp(15px, 1.25vw, 18px);
+    font-weight: 400;
+    line-height: 160%;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   INDUSTRY USE CASES SECTION
+   ========================================================= */
+
+.use-cases-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding:
+        clamp(40px, 4vw, 64px)
+        clamp(24px, 5.5vw, 80px)
+        clamp(64px, 7vw, 100px);
+
+    background: #FFFFFF;
+}
+
+
+.use-cases-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(64px, 8vw, 112px);
+}
+
+
+/* =========================================================
+   INDIVIDUAL USE CASE
+   ========================================================= */
+
+.use-case {
+    width: 100%;
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: clamp(32px, 5vw, 72px);
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   REVERSED USE CASE
+   ========================================================= */
+
+.use-case--reverse {
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+}
+
+
+/*
+   On desktop the reverse version puts
+   the content on the left and image on the right.
+*/
+
+.use-case--reverse .use-case__media {
+    order: 2;
+}
+
+.use-case--reverse .use-case__content {
+    order: 1;
+}
+
+
+/* =========================================================
+   MEDIA
+   ========================================================= */
+
+.use-case__media {
+    width: 100%;
+    min-width: 0;
+
+    aspect-ratio: 600 / 500;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        #E2E8F0;
+
+    border-radius:
+        clamp(14px, 1.5vw, 20px);
+
+    box-sizing: border-box;
+}
+
+
+.use-case__image {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.use-case__content {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   USE CASE EYEBROW
+   ========================================================= */
+
+.use-case__eyebrow {
+    width: fit-content;
+
+    padding: 6px 12px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 999px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   OPERATIONAL LABEL
+   ========================================================= */
+
+.use-case__label {
+    margin-top: clamp(20px, 2vw, 28px);
+
+    color: #94A3B8;
+
+    font-family: var(--font-mono);
+    font-size: clamp(10px, 0.85vw, 12px);
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.use-case__description {
+    width: 100%;
+
+    margin:
+        12px
+        0
+        0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: clamp(14px, 1.1vw, 16px);
+    font-weight: 400;
+
+    line-height: 155%;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.use-case__metrics {
+    width: 100%;
+    min-width: 0;
+
+    margin-top:
+        clamp(28px, 3vw, 40px);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap:
+        clamp(16px, 2.5vw, 36px);
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   INDIVIDUAL METRIC
+   ========================================================= */
+
+.use-case__metric {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   METRIC NUMBER
+   ========================================================= */
+
+.use-case__metric-number {
+    margin: 0;
+
+    color: #2563EB;
+
+    font-family: var(--font-primary);
+    font-size: clamp(26px, 2.2vw, 32px);
+    font-weight: 800;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.use-case__metric:nth-child(3) .use-case__metric-number {
+    color: #10B981;
+}
+
+/* =========================================================
+   METRIC LABEL
+   ========================================================= */
+
+.use-case__metric-label {
+    margin: 0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: clamp(11px, 0.9vw, 13px);
+    font-weight: 400;
+
+    line-height: 140%;
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .use-cases-section__content {
+        gap: clamp(56px, 7vw, 88px);
+    }
+
+
+    .use-case,
+    .use-case--reverse {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+
+        gap:
+            clamp(28px, 4vw, 52px);
+    }
+
+
+    .use-case__metric-label {
+        max-width: 140px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .use-cases-hero {
+        padding-top:
+            clamp(60px, 9vw, 88px);
+
+        padding-bottom:
+            clamp(60px, 9vw, 88px);
+    }
+
+
+    .use-cases-hero__heading {
+        max-width: 760px;
+
+        font-size:
+            clamp(36px, 6vw, 48px);
+    }
+
+
+    .use-cases-hero__description {
+        max-width: 700px;
+    }
+
+
+    .use-cases-section {
+        padding-top:
+            clamp(32px, 5vw, 48px);
+    }
+
+
+    .use-cases-section__content {
+        gap:
+            clamp(64px, 9vw, 88px);
+    }
+
+
+    /*
+       Stack the image and content.
+       This also prevents the two parts from
+       visually merging at smaller widths.
+    */
+
+    .use-case,
+    .use-case--reverse {
+        grid-template-columns: 1fr;
+
+        gap:
+            clamp(32px, 6vw, 48px);
+    }
+
+
+    /*
+       Image first for EVERY use case.
+    */
+
+    .use-case__media,
+    .use-case--reverse .use-case__media {
+        order: 1;
+    }
+
+
+    .use-case__content,
+    .use-case--reverse .use-case__content {
+        order: 2;
+
+        width: 100%;
+        max-width: 760px;
+    }
+
+
+    .use-case__media {
+        aspect-ratio: 600 / 500;
+    }
+
+
+    .use-case__metrics {
+        max-width: 720px;
+
+        margin-top:
+            clamp(28px, 4vw, 36px);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   <= 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .use-cases-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    .use-cases-hero__heading {
+        font-size:
+            clamp(32px, 7vw, 42px);
+
+        line-height: 110%;
+    }
+
+
+    .use-cases-hero__description {
+        font-size: 15px;
+
+        line-height: 155%;
+    }
+
+
+    .use-cases-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    .use-case__metrics {
+        gap: 20px;
+    }
+
+
+    .use-case__metric-label {
+        max-width: 140px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .use-cases-hero {
+        padding:
+            clamp(56px, 12vw, 72px)
+            clamp(20px, 6vw, 32px);
+    }
+
+
+    .use-cases-hero__eyebrow {
+        font-size: 11px;
+    }
+
+
+    .use-cases-hero__heading {
+        margin-top: 18px;
+
+        font-size:
+            clamp(30px, 8vw, 38px);
+
+        line-height: 112%;
+    }
+
+
+    .use-cases-hero__description {
+        margin-top: 16px;
+
+        font-size: 14px;
+
+        line-height: 155%;
+    }
+
+
+    .use-cases-section {
+        padding:
+            clamp(24px, 7vw, 40px)
+            clamp(20px, 6vw, 32px)
+            clamp(56px, 10vw, 80px);
+    }
+
+
+    .use-cases-section__content {
+        gap:
+            clamp(56px, 12vw, 80px);
+    }
+
+
+    .use-case,
+    .use-case--reverse {
+        gap:
+            clamp(28px, 7vw, 40px);
+    }
+
+
+    .use-case__media {
+        aspect-ratio: 600 / 500;
+
+        border-radius: 16px;
+    }
+
+
+    .use-case__eyebrow {
+        font-size: 11px;
+    }
+
+
+    .use-case__label {
+        margin-top: 18px;
+
+        font-size: 10px;
+    }
+
+
+    .use-case__description {
+        margin-top: 10px;
+
+        font-size: 14px;
+
+        line-height: 155%;
+    }
+
+
+    /*
+       Metrics become one column on mobile.
+       This prevents the three metric blocks
+       from becoming cramped or merging.
+    */
+
+    
+
+
+    .use-case__metrics {
+        margin-top: 28px;
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        justify-items: center;
+    }
+
+    .use-case__metric {
+        width: fit-content;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .use-case__metric-number {
+        font-size: 28px;
+    }
+
+
+    .use-case__metric-label {
+        max-width: 100%;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .use-cases-hero__heading {
+        font-size: 30px;
+    }
+
+
+    .use-cases-hero__description {
+        font-size: 14px;
+    }
+
+
+    .use-case__metric-number {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   DECISION PIPELINES
+   ========================================================= */
+
+.decision-pipelines {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding:
+        clamp(64px, 5.56vw, 80px)
+        clamp(24px, 5.56vw, 80px);
+
+    background: #F8FAFC;
+}
+
+
+/* =========================================================
+   SECTION CONTENT
+   ========================================================= */
+
+.decision-pipelines__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(40px, 3.33vw, 48px);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.decision-pipelines__header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.decision-pipelines__eyebrow {
+    width: fit-content;
+    min-height: 26px;
+
+    box-sizing: border-box;
+
+    padding:
+        6px
+        12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 99px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.decision-pipelines__heading {
+    width: 100%;
+
+    margin:
+        clamp(20px, 1.67vw, 24px)
+        0
+        0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: clamp(30px, 2.5vw, 36px);
+    font-weight: 800;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.decision-pipelines__description {
+    width: 100%;
+    max-width: 760px;
+
+    margin:
+        clamp(14px, 1.25vw, 18px)
+        0
+        0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: clamp(14px, 1.11vw, 16px);
+    font-weight: 400;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   PIPELINE GRID
+   ========================================================= */
+
+.decision-pipelines__grid {
+    width: 100%;
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: clamp(32px, 3.33vw, 48px);
+}
+
+
+/* =========================================================
+   PIPELINE CARD
+   ========================================================= */
+
+.decision-pipeline {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    padding: clamp(24px, 2.22vw, 32px);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(20px, 1.67vw, 24px);
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.decision-pipeline__header {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.decision-pipeline__title {
+    min-width: 0;
+
+    margin: 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.decision-pipeline__badge {
+    min-height: 26px;
+
+    box-sizing: border-box;
+
+    padding:
+        6px
+        12px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 99px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   STRESS BADGE
+   ========================================================= */
+
+.decision-pipeline__badge--stress {
+    background: #FEF2F2;
+    color: #EF4444;
+}
+
+
+/* =========================================================
+   AUGMENTED BADGE
+   ========================================================= */
+
+.decision-pipeline__badge--augmented {
+    background: #EEFBF7;
+    color: #10B981;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.decision-pipeline__divider {
+    width: 100%;
+    height: 1px;
+
+    flex-shrink: 0;
+
+    background: #E2E8F0;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.decision-pipeline__timeline {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(20px, 2vw, 28px);
+}
+
+
+/* =========================================================
+   TIMELINE EVENT
+   ========================================================= */
+
+.decision-pipeline__event {
+    width: 100%;
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        auto
+        minmax(0, 1fr);
+
+    column-gap: clamp(16px, 1.67vw, 24px);
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   TIME
+   ========================================================= */
+
+.decision-pipeline__time {
+    margin: 0;
+
+    padding-top: 1px;
+
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STRESS TIME
+   ========================================================= */
+
+.decision-pipeline__time--stress {
+    color: #EF4444;
+}
+
+
+/* =========================================================
+   AUGMENTED TIME
+   ========================================================= */
+
+.decision-pipeline__time--augmented {
+    color: #10B981;
+}
+
+
+/* =========================================================
+   EVENT CONTENT
+   ========================================================= */
+
+.decision-pipeline__event-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================================
+   EVENT HEADING
+   ========================================================= */
+
+.decision-pipeline__event-title {
+    margin: 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   EVENT DESCRIPTION
+   ========================================================= */
+
+.decision-pipeline__event-description {
+    margin:
+        8px
+        0
+        0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   <= 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .decision-pipelines {
+        padding-left: clamp(32px, 5vw, 64px);
+        padding-right: clamp(32px, 5vw, 64px);
+    }
+
+    .decision-pipelines__grid {
+        gap: clamp(28px, 3.5vw, 40px);
+    }
+
+    .decision-pipeline {
+        padding: clamp(24px, 3vw, 32px);
+    }
+
+    .decision-pipeline__header {
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .decision-pipelines {
+        padding:
+            clamp(56px, 8vw, 72px)
+            clamp(24px, 6vw, 48px);
+    }
+
+    .decision-pipelines__grid {
+        grid-template-columns: 1fr;
+
+        gap: clamp(28px, 5vw, 40px);
+    }
+
+    .decision-pipeline {
+        padding: clamp(24px, 4vw, 32px);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   <= 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .decision-pipelines {
+        padding:
+            clamp(48px, 8vw, 64px)
+            6%;
+    }
+
+    .decision-pipelines__content {
+        gap: clamp(36px, 6vw, 48px);
+    }
+
+    .decision-pipelines__heading {
+        font-size: clamp(28px, 6vw, 34px);
+    }
+
+    .decision-pipelines__description {
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+    .decision-pipeline__header {
+        gap: 16px;
+    }
+
+    .decision-pipeline__title {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .decision-pipelines {
+        padding:
+            clamp(48px, 10vw, 64px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .decision-pipelines__eyebrow {
+        font-size: 10px;
+    }
+
+    .decision-pipelines__heading {
+        margin-top: 18px;
+
+        font-size: clamp(27px, 8vw, 32px);
+
+        line-height: 110%;
+    }
+
+    .decision-pipelines__description {
+        margin-top: 14px;
+
+        font-size: 14px;
+        line-height: 145%;
+    }
+
+    .decision-pipeline {
+        padding: clamp(20px, 6vw, 28px);
+
+        border-radius: 14px;
+    }
+
+    .decision-pipeline__header {
+        flex-wrap: wrap;
+
+        align-items: center;
+    }
+
+    .decision-pipeline__title {
+        font-size: 18px;
+    }
+
+    .decision-pipeline__badge {
+        font-size: 10px;
+    }
+
+    .decision-pipeline__timeline {
+        gap: 24px;
+    }
+
+    .decision-pipeline__event {
+        grid-template-columns:
+            auto
+            minmax(0, 1fr);
+
+        column-gap: 14px;
+    }
+
+    .decision-pipeline__time {
+        font-size: 13px;
+    }
+
+    .decision-pipeline__event-title {
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    .decision-pipeline__event-description {
+        margin-top: 7px;
+
+        font-size: 13px;
+        line-height: 145%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .decision-pipelines {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .decision-pipeline__header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .decision-pipeline__badge {
+        align-self: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   BENEFITS / SYSTEM SCALE
+   ========================================================= */
+
+.benefits-section {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding:
+        clamp(64px, 7vw, 100px)
+        clamp(24px, 5.5vw, 80px);
+
+    background: #FFFFFF;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.benefits-section__content {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: clamp(40px, 4vw, 56px);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.benefits-section__header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: clamp(20px, 2vw, 24px);
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.benefits-section__eyebrow {
+    width: fit-content;
+
+    min-height: 26px;
+
+    padding:
+        6px
+        12px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EFF6FF;
+    color: #2563EB;
+
+    border-radius: 99px;
+
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.benefits-section__heading {
+    width: 100%;
+
+    margin: 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: clamp(30px, 2.5vw, 36px);
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BENEFITS GRID
+   ========================================================= */
+
+.benefits-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   BENEFIT CARD
+   ========================================================= */
+
+
+
+
+.benefit-card {
+    width: 100%;
+    min-width: 0;
+
+    min-height: 204px;
+
+
+    padding: 32px;
+
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    gap: 16px;
+
+    background: #F8FAFC;
+
+    border:
+        1px solid
+        #E2E8F0;
+
+    border-radius: 16px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.benefit-card__icon {
+    width: 44px;
+    height: 44px;
+
+    display: block;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.benefit-card__heading {
+    margin: 0;
+
+    color: #0B1F3A;
+
+    font-family: var(--font-primary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.benefit-card__description {
+    width: 100%;
+
+    margin: 0;
+
+    color: #475569;
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.benefit-card:hover {
+    border-color: #CBD5E1;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, 0.06);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   LARGE TABLET / SMALL DESKTOP
+   <= 1100px
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .benefits-section__content {
+        gap: clamp(40px, 5vw, 52px);
+    }
+
+    .benefit-card {
+        padding: clamp(24px, 3vw, 32px);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 900px
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .benefits-section {
+        padding:
+            clamp(60px, 9vw, 88px)
+            clamp(24px, 6vw, 64px);
+    }
+
+    .benefits-section__heading {
+        font-size: clamp(30px, 5vw, 36px);
+        line-height: 110%;
+    }
+
+    .benefits-grid {
+        gap: clamp(20px, 3vw, 24px);
+    }
+
+    .benefit-card {
+        min-height: 200px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   <= 700px
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .benefits-section {
+        padding:
+            clamp(56px, 10vw, 72px)
+            6%;
+    }
+
+    .benefits-section__content {
+        gap: clamp(36px, 7vw, 48px);
+    }
+
+    .benefits-section__heading {
+        font-size: clamp(28px, 6vw, 34px);
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .benefit-card {
+        min-height: auto;
+
+        padding: clamp(24px, 5vw, 32px);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 600px
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .benefits-section {
+        padding:
+            clamp(56px, 12vw, 72px)
+            clamp(20px, 6vw, 32px);
+    }
+
+    .benefits-section__header {
+        gap: 18px;
+    }
+
+    .benefits-section__eyebrow {
+        min-height: 26px;
+
+        font-size: 11px;
+    }
+
+    .benefits-section__heading {
+        font-size: clamp(28px, 8vw, 34px);
+        line-height: 110%;
+    }
+
+    .benefits-grid {
+        gap: 16px;
+    }
+
+    .benefit-card {
+        padding: clamp(24px, 6vw, 28px);
+
+        gap: 14px;
+
+        border-radius: 14px;
+    }
+
+    .benefit-card__heading {
+        font-size: 19px;
+        line-height: 110%;
+    }
+
+    .benefit-card__description {
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   <= 400px
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .benefits-section__heading {
+        font-size: 28px;
+    }
+
+    .benefit-card {
+        padding: 22px;
+    }
+
+    .benefit-card__heading {
+        font-size: 18px;
+    }
+
+}
