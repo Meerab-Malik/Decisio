@@ -2,16 +2,11 @@
 
 :root {
 
-    /* =========================
-       BRAND
-       ========================= */
 
     --color-brand-primary: #2563EB;
 
 
-    /* =========================
-       TEXT
-       ========================= */
+
 
     --color-text-heading: #0B1F3A;
     --color-text-primary: #0F172A;
@@ -20,18 +15,12 @@
     --color-text-inverse: #FFFFFF;
 
 
-    /* =========================
-       ACCENT
-       ========================= */
 
     --color-accent-green: #10B981;
     --color-accent-orange: #F59E0B;
     --color-accent-red: #EF4444;
 
 
-    /* =========================
-       BACKGROUNDS
-       ========================= */
 
     --color-background-primary: #FFFFFF;
     --color-background-blue: #EFF6FF;
@@ -44,25 +33,16 @@
     --color-background-footer: #05111F;
 
 
-    /* =========================
-       FOOTER
-       ========================= */
+
 
     --color-footer-text: #94A3B8;
     --color-footer-border: #152E4E;
 
 
-    /* =========================
-       FONTS
-       ========================= */
 
     --font-primary: "Geist", sans-serif;
     --font-mono: "Geist Mono", monospace;
 
-
-    /* =========================
-       SPACING
-       ========================= */
 
     --space-32: 32px;
     --space-40: 40px;
@@ -74,18 +54,13 @@
     --space-120: 120px;
 
 
-    /* =========================
-       LAYOUT
-       ========================= */
+
 
     --page-padding: 80px;
     --radius-button: 8px;
 
 
 
-    /* =========================
-   CTA
-   ========================= */
 
     --gradient-cta: linear-gradient(90deg, #05111F 0%, #152E4E 100%);
 
