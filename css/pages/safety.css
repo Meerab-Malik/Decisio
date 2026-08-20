@@ -1090,6 +1090,8 @@
 
     .execution-path__card {
         padding: 14px;
+        align-items: center;
+        text-align: center;
     }
 
     .execution-path__barrier {
@@ -1513,12 +1515,30 @@
         max-width: 520px;
     }
 
+
+    .security-controls__eyebrow {
+        display: flex;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .security-controls__heading {
+        text-align: center;
+    }
+
+    .security-controls__text {
+        text-align: justify;
+    }
+
     .security-controls__text {
         width: min(100%, 680px);
         max-width: none;
         margin: 0 auto;
+        
                 
     }
+
+
 
 
     .security-controls__heading {
