@@ -801,3 +801,145 @@
         padding: 18px 16px;
     }
 }
+
+.contact-hero__badge {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-hero__badge:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06);
+    transform: translateY(-2px);
+}
+
+.contact-hero__submit-btn {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-hero__submit-btn:hover {
+    background-color: #1D4ED8;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.2);
+    transform: translateY(-1px);
+}
+
+.contact-hero__submit-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.timeline__card {
+    transition: border-color 0.2s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.timeline__card:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+    transform: translateY(-3px);
+}
+
+.timeline__card-icon {
+    transition: transform 0.25s ease;
+}
+
+.timeline__card:hover .timeline__card-icon {
+    transform: scale(1.05);
+}
+
+.timeline__arrow-icon {
+    transition: transform 0.25s ease;
+}
+
+.timeline__arrow-wrapper:hover .timeline__arrow-icon {
+    transform: translateX(3px);
+}
+
+.connect__card {
+    transition: border-color 0.2s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.connect__card:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+    transform: translateY(-3px);
+}
+
+.connect__card-icon {
+    transition: transform 0.25s ease;
+}
+
+.connect__card:hover .connect__card-icon {
+    transform: scale(1.05);
+}
+
+.connect__email {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.connect__email:hover {
+    color: #1D4ED8;
+    opacity: 1;
+}
+
+.connect__button {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.connect__button:hover {
+    background-color: #1E293B;
+    box-shadow: 0 5px 12px rgba(15, 23, 42, 0.12);
+    transform: translateY(-1px);
+}
+
+.connect__button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.faq__item {
+    transition: border-color 0.2s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.faq__item:hover {
+    border-color: #CBD5E1;
+}
+
+.faq__question-text {
+    transition: color 0.2s ease;
+}
+
+.faq__question:hover .faq__question-text {
+    color: #2563EB;
+}
+
+.faq__icon::before,
+.faq__icon::after {
+    transition: background-color 0.2s ease, transform 0.25s ease;
+}
+
+.faq__question:hover .faq__icon::before,
+.faq__question:hover .faq__icon::after {
+    background-color: #2563EB;
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-hero__badge,
+    .contact-hero__submit-btn,
+    .timeline__card,
+    .timeline__card-icon,
+    .timeline__arrow-icon,
+    .connect__card,
+    .connect__card-icon,
+    .connect__email,
+    .connect__button,
+    .faq__item,
+    .faq__question-text,
+    .faq__icon::before,
+    .faq__icon::after,
+    .footer__column a,
+    .footer__socials a {
+        transition: none;
+        transform: none;
+    }
+}

@@ -1,7 +1,3 @@
-/* =========================================================
-   HERO
-   ========================================================= */
-
 .hero {
     width: 100%;
 
@@ -14,10 +10,6 @@
     );
 }
 
-
-/* =========================================================
-   HERO CONTENT
-   ========================================================= */
 
 .hero__content {
     width: 100%;
@@ -32,9 +24,6 @@
 }
 
 
-/* =========================================================
-   LEFT SIDE
-   ========================================================= */
 
 .hero__left {
     width: 100%;
@@ -44,9 +33,7 @@
     flex-direction: column;
     justify-content: center;
 }
-/* =========================================================
-   EYEBROW
-   ========================================================= */
+
 
 .hero__eyebrow {
     width: 165px;
@@ -68,9 +55,6 @@
 }
 
 
-/* =========================================================
-   HEADING
-   ========================================================= */
 
 .hero__heading {
     width: 100%;
@@ -87,9 +71,6 @@
 }
 
 
-/* =========================================================
-   DESCRIPTION
-   ========================================================= */
 
 .hero__description {
     width: 100%;
@@ -107,9 +88,7 @@
 }
 
 
-/* =========================================================
-   HERO BUTTONS
-   ========================================================= */
+
 
 .hero__actions {
     display: flex;
@@ -128,7 +107,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 12px 24px;
+    padding: 14px 30px;
 
     border-radius: 8px;
 
@@ -144,10 +123,15 @@
 }
 
 
-/* Primary */
+.hero__button:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-brand-primary);
+    color: var(--color-brand-primary);
+}
+
+
 
 .hero__button--primary {
-    width: 147px;
 
     background: var(--color-brand-primary);
     color: var(--color-text-inverse);
@@ -156,10 +140,9 @@
 }
 
 
-/* Secondary */
 
 .hero__button--secondary {
-    width: 124px;
+    padding: 14px 24px;
 
     background: transparent;
     color: var(--color-text-primary);
@@ -168,9 +151,14 @@
 }
 
 
-/* =========================================================
-   METRICS
-   ========================================================= */
+
+.hero__button--secondary:hover {
+
+    background: var(--color-brand-primary);
+    color: white;
+
+}
+
 
 .hero__metrics {
     width: 100%;
@@ -192,8 +180,17 @@
     flex-direction: column;
 
     gap: 8px;
+    padding: 8px 10px;
+
+    border-radius: 10px;
+
+    transition:
+        transform 20s ease,
 }
 
+.hero__metric:hover {
+    transform: translateY(-7px);
+}
 
 
 
@@ -228,9 +225,6 @@
 }
 
 
-/* =========================================================
-   RIGHT SIDE
-   ========================================================= */
 
 .hero__right {
     width: 100%;
@@ -242,9 +236,7 @@
     overflow: hidden;
 }
 
-/* =========================================================
-   HERO SVG
-   ========================================================= */
+
 
 .hero__visual {
     display: block;
@@ -262,10 +254,6 @@
 
 
 
-/* =========================================================
-   DECISION LAYER
-   ========================================================= */
-
 .decision-layer {
     width: 100%;
 
@@ -275,9 +263,6 @@
 }
 
 
-/* =========================================================
-   CONTENT
-   ========================================================= */
 
 .decision-layer__content {
     width: 100%;
@@ -291,9 +276,6 @@
 }
 
 
-/* =========================================================
-   HEADING
-   ========================================================= */
 
 .decision-layer__heading {
     width: 100%;
@@ -318,9 +300,6 @@
 }
 
 
-/* =========================================================
-   DESCRIPTION
-   ========================================================= */
 
 .decision-layer__description {
     width: 100%;
@@ -340,9 +319,6 @@
 }
 
 
-/* =========================================================
-   THREE STEPS
-   ========================================================= */
 
 .decision-layer__steps {
     width: 100%;
@@ -356,24 +332,40 @@
 }
 
 
-/* =========================================================
-   STEP
-   ========================================================= */
 
 .decision-layer__step {
     min-width: 0;
+
+    padding: 24px 20px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     text-align: center;
+
+    border: 1px solid transparent;
+    border-radius: 16px;
+
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        background-color 200ms ease,
+        box-shadow 200ms ease;
+}
+
+.decision-layer__step:hover {
+    transform: translateY(-4px);
+
+    background-color: #FFFFFF;
+
+    border-color: #E2E8F0;
+
+    box-shadow:
+        0 12px 28px rgba(15, 23, 42, 0.07);
 }
 
 
-/* =========================================================
-   ICON
-   ========================================================= */
 
 .decision-layer__icon {
     width: 40px;
@@ -384,12 +376,14 @@
     object-fit: contain;
 
     margin-bottom: 16px;
+    transition: transform 200ms ease;
+}
+
+.decision-layer__step:hover .decision-layer__icon {
+    transform: scale(1.08);
 }
 
 
-/* =========================================================
-   STEP TITLE
-   ========================================================= */
 
 .decision-layer__step-title {
     margin: 0;
@@ -403,9 +397,6 @@
 }
 
 
-/* =========================================================
-   STEP DESCRIPTION
-   ========================================================= */
 
 .decision-layer__step-description {
     width: 100%;
@@ -721,7 +712,6 @@
         font-size: clamp(0.875rem, 2vw, 1rem);
     }
 
-    /* Stack the three decision steps */
     .decision-layer__steps {
         grid-template-columns: 1fr;
 
@@ -820,9 +810,6 @@
 }
 
 
-/* =========================================================
-   CARDS
-   ========================================================= */
 
 .hazard-section__cards {
     width: 100%;
@@ -852,6 +839,20 @@
 
     border: 1px solid #E2E8F0;
     border-radius: 16px;
+
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
+}
+
+.hazard-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #BFDBFE;
+
+    box-shadow:
+        0 16px 32px rgba(15, 23, 42, 0.08);
 }
 
 
@@ -879,6 +880,15 @@
     border-radius: 8px;
 }
 
+
+.hazard-card__icon {
+    transition:
+        transform 200ms ease;
+}
+
+.hazard-card:hover .hazard-card__icon {
+    transform: scale(1.08);
+}
 
 .hazard-card__number {
     color: #94A3B8;
@@ -1092,7 +1102,6 @@
 }
 
 
-
 .process-card {
     width: 100%;
     min-width: 0;
@@ -1108,8 +1117,21 @@
 
     border: 1px solid #E2E8F0;
     border-radius: 16px;
+
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
 }
 
+.process-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #BFDBFE;
+
+    box-shadow:
+        0 16px 32px rgba(15, 23, 42, 0.08);
+}
 
 
 .process-card__top {
@@ -1134,6 +1156,13 @@
     border-radius: 50%;
 }
 
+.process-card__icon {
+    transition: transform 200ms ease;
+}
+
+.process-card:hover .process-card__icon {
+    transform: scale(1.08);
+}
 
 
 
@@ -1202,8 +1231,16 @@
     height: 16px;
 
     object-fit: contain;
+
+    transition:
+        transform 200ms ease,
+        opacity 200ms ease;
 }
 
+.process-section__arrow img:hover {
+    transform: translateX(3px);
+    opacity: 0.7;
+}
 
 
 @media (max-width: 1200px) {
@@ -1381,8 +1418,21 @@
 
     border: 1px solid #E2E8F0;
     border-radius: 16px;
+
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
 }
 
+.standard-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #BFDBFE;
+
+    box-shadow:
+        0 16px 32px rgba(15, 23, 42, 0.07);
+}
 
 
 
@@ -1434,7 +1484,14 @@
     white-space: nowrap;
 }
 
+.standard-card__tag {
+    transition:
+        transform 180ms ease;
+}
 
+.standard-card:hover .standard-card__tag {
+    transform: translateY(-2px);
+}
 
 .standard-card__description {
     width: 100%;
@@ -1632,7 +1689,23 @@
 
     border: 1px solid #E2E8F0;
     border-radius: 12px;
+
+    transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
 }
+
+.integrity-feature:hover {
+    transform: translateY(-3px);
+
+    border-color: #BFDBFE;
+
+    box-shadow:
+        0 10px 22px rgba(15, 23, 42, 0.06);
+}
+
+
 
 
 
@@ -1646,6 +1719,12 @@
     display: block;
 
     object-fit: contain;
+    transition: transform 180ms ease;
+
+}
+
+.integrity-feature:hover .integrity-feature__icon {
+    transform: scale(1.08);
 }
 
 
@@ -1874,33 +1953,35 @@
 
     overflow: hidden;
 
+    border: 1px solid #1E3A5F;
     border-radius: 16px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.22);
+
+    transition:
+        transform 220ms ease,
+        border-color 220ms ease,
+        box-shadow 220ms ease;
+}
+
+.demo-section__video:hover {
+    transform: translateY(-4px);
+
+    border-color: #2563EB;
+
+    box-shadow:
+        0 24px 60px rgba(37, 99, 235, 0.16);
 }
 
 
-
-.demo-section__video img,
-.demo-section__video svg,
-.demo-section__video > video {
+.demo-section__video iframe {
     width: 100%;
     height: 100%;
 
     display: block;
 
-    object-fit: cover;
-}
-
-
-
-.demo-section__video img,
-.demo-section__video svg,
-.demo-section__video > video {
-    width: 100%;
-    height: 100%;
-
-    display: block;
-
-    object-fit: cover;
+    border: 0;
 }
 
 
@@ -1959,10 +2040,22 @@
     text-decoration: none;
 
     white-space: nowrap;
+    transition:
+        transform 180ms ease,
+        background-color 180ms ease,
+        color 180ms ease;
 }
 
 
+.demo-section__cta:hover {
+    transform: translateY(-2px);
 
+    color: #FFFFFF;
+
+    border: 1px solid white;
+
+    background-color: transparent;
+}
 
 .demo-section__supporting {
     margin: -16px 0 0;
@@ -2086,6 +2179,31 @@
 
         font-size: 12px;
         line-height: 140%;
+    }
+
+}
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero__visual,
+    .hero__metric,
+    .decision-layer__step,
+    .decision-layer__icon,
+    .hazard-card,
+    .hazard-card__icon,
+    .process-card,
+    .process-card__icon,
+    .process-section__arrow img,
+    .standard-card,
+    .standard-card__tag,
+    .integrity-feature,
+    .integrity-feature__icon,
+    .demo-section__video,
+    .demo-section__cta {
+        transition: none;
     }
 
 }

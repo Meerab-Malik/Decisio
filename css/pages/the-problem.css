@@ -841,3 +841,71 @@
         font-size: 40px;
     }
 }
+
+
+.problem-stage,
+.failures-card,
+.gap-card,
+.cost-card {
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.problem-stage:hover {
+    transform: translateY(-3px);
+}
+
+.problem-stage--gap:hover {
+    border-color: #F59E0B66;
+    background: #F59E0B24;
+    box-shadow: 0 8px 24px #F59E0B12;
+}
+
+.failures-card:hover {
+    transform: translateY(-4px);
+    border-color: #BFDBFE;
+    box-shadow: 0 10px 28px #0F172A0D;
+}
+
+.failures-card:hover .failures-card__icon {
+    transform: scale(1.05);
+}
+
+.failures-card__icon {
+    transition: transform 0.2s ease;
+}
+
+.gap-card:hover {
+    transform: translateY(-3px);
+    border-color: #CBD5E1;
+    background: #F1F5F9;
+    box-shadow: 0 8px 24px #0F172A0A;
+}
+
+.gap-card--critical:hover {
+    border-color: #DC2626;
+    background: #FEE2E2;
+    box-shadow: 0 10px 28px #EF444418;
+}
+
+.cost-card:hover {
+    transform: translateY(-5px);
+    border-color: #2563EB66;
+    background: #19375A;
+    box-shadow: 0 12px 30px #00000020;
+}
+
+.cost-card:hover .cost-card__metric {
+    color: #60A5FA;
+}
+
+.cost-card__metric {
+    transition: color 0.2s ease;
+}
+
+.cta-banner__button:hover {
+    transform: translateY(-2px);
+}
