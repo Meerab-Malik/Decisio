@@ -205,6 +205,14 @@
     border: 1px solid #E2E8F0;
     border-radius: 24px;
     box-sizing: border-box;
+    transition:
+        transform 220ms ease,
+        box-shadow 220ms ease;
+}
+
+.safety-layers__image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #0000000A;
 }
 
 
@@ -588,6 +596,15 @@
     max-width: 616px;
     height: auto;
     object-fit: contain;
+    transition:
+        transform 220ms ease,
+        filter 220ms ease;
+}
+
+
+.accountability__image:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 12px 24px #00000012);
 }
 
 
@@ -812,8 +829,26 @@
     border: 1px solid #E2E8F0;
     border-radius: 12px;
     background: #FFFFFF;
+    transition:
+        transform 200ms ease,
+        box-shadow 200ms ease,
+        border-color 200ms ease;
 }
 
+
+.execution-path__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px #0000000D;
+}
+
+.execution-path__card--recommendation:hover {
+    border-color: #2563EB;
+    box-shadow: 0 10px 26px #2563EB18;
+}
+
+.execution-path__card--scada:hover {
+    box-shadow: 0 10px 26px #0B1F3A24;
+}
 
 .execution-path__card--sources,
 .execution-path__card--decision,
@@ -1176,6 +1211,19 @@
     border: 1px solid #FFFFFF1F;
     border-radius: 12px;
     background: #152E4E;
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        background 200ms ease,
+        box-shadow 200ms ease;
+}
+
+
+.read-only__source-card:hover {
+    transform: translateX(4px);
+    border-color: #2563EB55;
+    background: #183453;
+    box-shadow: 0 8px 20px #00000018;
 }
 
 .read-only__source-heading {
@@ -1269,6 +1317,14 @@
     height: auto;
     margin: 0 auto;
     object-fit: contain;
+    transition:
+        transform 220ms ease,
+        filter 220ms ease;
+}
+
+.read-only__processor-image:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 12px 24px #00000018);
 }
 
 @media (max-width: 1100px) {
@@ -1387,6 +1443,14 @@
     border-radius: clamp(16px, 1.667vw, 24px);
     box-sizing: border-box;
     object-fit: contain;
+    transition:
+        transform 220ms ease,
+        box-shadow 220ms ease;
+}
+
+.security-controls__image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #0000000A;
 }
 
 .security-controls__text {
@@ -1438,7 +1502,15 @@
     grid-template-columns: 40px minmax(0, 1fr);
     align-items: start;
     gap: 16px;
+    transition:
+        transform 200ms ease,
+        opacity 200ms ease;
 }
+
+.security-controls__feature:hover {
+    transform: translateX(4px);
+}
+
 
 .security-controls__icon {
     display: block;
@@ -1684,6 +1756,15 @@
     height: auto;
     margin: 0 auto;
     object-fit: contain;
+    transition:
+        transform 220ms ease,
+        filter 220ms ease;
+}
+
+
+.decision-governance__image:hover {
+    transform: translateY(-4px);
+    filter: drop-shadow(0 12px 24px #00000010);
 }
 
 @media (max-width: 1100px) {
@@ -1818,7 +1899,23 @@
     border-radius: 12px;
 
     background: #FFFFFF;
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
 }
+
+
+.compliance-card:hover {
+    transform: translateY(-3px);
+    border-color: #CBD5E1;
+    box-shadow: 0 8px 20px #0000000A;
+}
+
+.compliance-card:hover .compliance-card__title {
+    color: #2563EB;
+}
+
 
 .compliance-card__icon {
     flex: 0 0 32px;
@@ -1921,3 +2018,7 @@
     }
 
 }
+
+
+
+

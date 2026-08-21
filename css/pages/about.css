@@ -396,9 +396,16 @@
     border-radius: 20px;
 
     object-fit: cover;
+    transition:
+        transform 300ms ease,
+        box-shadow 300ms ease;
 }
 
-
+.vision-section__image:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 12px 28px rgba(15, 23, 42, 0.08);
+}
 
 @media (min-width: 1440px) {
 
@@ -722,9 +729,22 @@
     border-radius: 16px;
 
     gap: 16px;
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
 }
 
 
+
+.philosophy-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #BFDBFE;
+
+    box-shadow:
+        0 8px 24px rgba(37, 99, 235, 0.07);
+}
 
 .philosophy-card__label {
     color: var(--color-brand-primary);
@@ -1059,21 +1079,20 @@
 
     border: 1px solid #E2E8F0;
     border-radius: 16px;
-
     transition:
-        border-color 180ms ease,
-        border-width 180ms ease,
-        box-shadow 180ms ease;
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
 }
 
 
 .comparison-card:hover {
-    padding: calc(clamp(24px, 2.22vw, 32px) - 1px);
+    transform: translateY(-3px);
 
-    border: 2px solid var(--color-brand-primary);
+    border-color: var(--color-brand-primary);
 
     box-shadow:
-        0 6px 18px rgba(37, 99, 235, 0.08);
+        0 8px 22px rgba(37, 99, 235, 0.08);
 }
 
 
@@ -1192,9 +1211,7 @@
     }
 
 
-    .comparison-card:hover {
-        padding: calc(clamp(24px, 3vw, 28px) - 1px);
-    }
+
 
 }
 
@@ -1225,9 +1242,7 @@
     }
 
 
-    .comparison-card:hover {
-        padding: 27px;
-    }
+
 
 }
 
@@ -1264,9 +1279,7 @@
     }
 
 
-    .comparison-card:hover {
-        padding: 23px;
-    }
+
 
 
     .comparison-card__header {
@@ -1295,9 +1308,7 @@
     }
 
 
-    .comparison-card:hover {
-        padding: 19px;
-    }
+
 
 
     .comparison-card__list {
@@ -1642,8 +1653,8 @@
     letter-spacing: 0;
 
     text-align: right;
-}
 
+}
 
 
 .roadmap-section__header {
@@ -1797,6 +1808,10 @@
     border-radius: 12px;
 
     gap: 8px;
+    transition:
+        transform 200ms ease,
+        border-color 200ms ease,
+        box-shadow 200ms ease;
 }
 
 
@@ -1808,6 +1823,14 @@
     gap: 12px;
 }
 
+.roadmap-card:hover {
+    transform: translateX(4px);
+
+    border-color: #BFDBFE;
+
+    box-shadow:
+        0 6px 18px rgba(37, 99, 235, 0.06);
+}
 
 .roadmap-card__title {
     margin: 0;
@@ -2196,3 +2219,5 @@
     }
 
 }
+
+
