@@ -279,7 +279,7 @@
     color: var(--color-text-inverse);
 
     font-family: var(--font-primary);
-    font-size: 20px;
+    font-size: clamp(20px, 1.5vw, 25px);
     font-weight: 800;
     line-height: 100%;
 }
@@ -316,7 +316,7 @@
     color: var(--color-text-inverse);
 
     font-family: var(--font-mono);
-    font-size: clamp(11px, 1.2vw, 13px);
+    font-size: clamp(12px, 3.5vw, 15px);
     font-weight: 600;
     line-height: 100%;
 
@@ -332,7 +332,7 @@
 
 
     font-family: var(--font-primary);
-    font-size: clamp(13px, 1.4vw, 15px);
+    font-size: clamp(14px, 1.4vw, 16px);
     font-weight: 400;
     line-height: 100%;
 
@@ -780,29 +780,36 @@
         text-align: center;
     }
 
+    .footer__brand-text {
+        font-size: clamp(21px, 2.5vw, 26px);
+    }
+
     .footer__brand-name {
         justify-content: center;
     }
 
     .footer__description {
         width: min(100%, 32rem);
-
-        font-size: clamp(14px, 1.8vw, 16px);
-
+        font-size: clamp(15px, 2vw, 18px);
         text-align: center;
     }
 
     .footer__column {
-        width: 100%;
-        min-width: 0;
+        align-items: flex-start;
+        width: fit-content;
+        margin: 0 auto;
     }
 
     .footer__column h3 {
-        font-size: clamp(12px, 1.6vw, 14px);
+        font-size: clamp(13px, 1.8vw, 16px);
     }
 
     .footer__column a {
-        font-size: clamp(14px, 1.7vw, 16px);
+        font-size: clamp(15px, 2vw, 18px);
+    }
+
+    .footer__copyright {
+        font-size: clamp(13px, 1.7vw, 16px);
     }
 }
 
@@ -879,8 +886,8 @@
     }
 
     .footer__column h3 {
-        font-size: clamp(11px, 3vw, 13px);
-    }
+    font-size: clamp(12px, 1.2vw, 14px);    
+}
 
     .footer__column a {
         font-size: clamp(13px, 3.5vw, 15px);
