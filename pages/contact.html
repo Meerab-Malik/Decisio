@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Decisio</title>
+
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages/contact.css">
+</head>
+
+
+<body>
+
+
+    <header class="navbar">
+        <a href="index.html" class="navbar__logo">
+            <img src="../assets/images/decisio-logo.svg" alt="Decisio" class="navbar__logo-image">
+            <span class="navbar__brand">Decisio</span>
+            <span class="navbar__badge">AI</span>
+        </a>
+
+
+        <nav class="navbar__links" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="features.html">Features</a>
+            <a href="use-cases.html">Use Cases</a>
+            <a href="safety.html">Safety</a>
+            <a href="the-problem.html">The Problem</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+
+        <a href="#" class="navbar__cta">Request a Demo</a>
+
+
+        <button class="navbar__menu" type="button" aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+
+        <nav class="navbar__mobile" aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="features.html">Features</a>
+            <a href="use-cases.html">Use Cases</a>
+            <a href="safety.html">Safety</a>
+            <a href="the-problem.html">The Problem</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" class="navbar__mobile-cta">Request a Demo</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-hero__container">
+               
+                <div class="contact-hero__content">
+                    <span class="contact-hero__eyebrow">Get in touch</span>
+
+
+                    <h1 class="contact-hero__heading">
+                        See Decisio on Your Own Failure Scenarios
+                    </h1>
+
+
+                    <p class="contact-hero__description">
+                        Decisio live demo is specifically configured around your exact ecosystem. Provide us with a summary of past operational incidents or plant configurations, and we will demonstrate how Decisio guides your team dynamically.
+                    </p>
+
+
+                    <ul class="contact-hero__features" role="list">
+                        <li class="contact-hero__feature-item">
+                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <span>Personalized walkthrough customized to your specific industry sector</span>
+                        </li>
+                        <li class="contact-hero__feature-item">
+                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <span>Fast, actionable 30-minute overview focusing strictly on decision parameters</span>
+                        </li>
+                        <li class="contact-hero__feature-item">
+                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <span>Live generation of decision briefs modeled on your historical incident reports</span>
+                        </li>
+                        <li class="contact-hero__feature-item">
+                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <span>Read-only architecture review highlighting absolute data isolation</span>
+                        </li>
+                        <li class="contact-hero__feature-item">
+                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <span>Overview of safety-critical technical boundary engineering limits</span>
+                        </li>
+                    </ul>
+
+
+                    <div class="contact-hero__badges">
+                        <div class="contact-hero__badge">
+                            <img src="../assets/icons/contact/hero-1.svg" alt="" class="contact-hero__badge-icon">
+                            <span>No Credit Card</span>
+                        </div>
+                        <div class="contact-hero__badge">
+                            <img src="../assets/icons/contact/hero-2.svg" alt="" class="contact-hero__badge-icon">
+                            <span>SOC 2 Certified</span>
+                        </div>
+                        <div class="contact-hero__badge">
+                            <img src="../assets/icons/contact/hero-3.svg" alt="" class="contact-hero__badge-icon">
+                            <span>Read-only Access</span>
+                        </div>
+                        <div class="contact-hero__badge">
+                            <img src="../assets/icons/contact/hero-4.svg" alt="" class="contact-hero__badge-icon">
+                            <span>Cancel Anytime</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact-hero__card">
+                    <div class="contact-hero__card-header">
+                        <h2 class="contact-hero__card-title">Request a Demo</h2>
+                        <p class="contact-hero__card-subtitle">Fill out the form below to book your customized scenario brief.</p>
+                    </div>
+
+
+                    <form class="contact-hero__form" action="#" method="POST">
+                        <div class="contact-hero__form-group">
+                            <label for="fullName" class="contact-hero__label">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="contact-hero__input" placeholder="Jane Smith" required>
+                        </div>
+
+
+                        <div class="contact-hero__form-group">
+                            <label for="workEmail" class="contact-hero__label">Work Email</label>
+                            <input type="email" id="workEmail" name="workEmail" class="contact-hero__input" placeholder="jane@company.com" required>
+                        </div>
+
+
+                        <div class="contact-hero__form-group">
+                            <label for="company" class="contact-hero__label">Company</label>
+                            <input type="text" id="company" name="company" class="contact-hero__input" placeholder="Acme Industries" required>
+                        </div>
+
+
+                        <div class="contact-hero__form-group">
+                            <label for="industry" class="contact-hero__label">Industry</label>
+                            <div class="contact-hero__select-wrapper">
+                                <select id="industry" name="industry" class="contact-hero__select" required>
+                                    <option value="" disabled selected hidden>Select your industry</option>
+                                    <option value="energy">Energy & Utilities</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="oil-gas">Oil & Gas</option>
+                                    <option value="chemical">Chemical Processing</option>
+                                    <option value="other">Other Heavy Industry</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="contact-hero__form-group">
+                            <label for="message" class="contact-hero__label">
+                                Operational Message <span class="contact-hero__label-optional">(Optional)</span>
+                            </label>
+                            <textarea id="message" name="message" class="contact-hero__textarea" placeholder="Provide details about past operational incidents or plant configurations..."></textarea>
+                        </div>
+
+
+                        <button type="submit" class="contact-hero__submit-btn">
+                            Request Demo Walkthrough
+                        </button>
+
+
+                        <p class="contact-hero__disclaimer">
+                            By submitting, you agree to our read-only architecture review and data protection compliance statement.
+                        </p>
+                    </form>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section class="timeline">
+            <div class="timeline__container">
+                <div class="timeline__header">
+                    <span class="timeline__eyebrow">CHRONOLOGY OF PRECISION</span>
+                    <h2 class="timeline__heading">What Happens Next</h2>
+                </div>
+
+                <div class="timeline__grid">
+                    <div class="timeline__card">
+                        <div class="timeline__card-top">
+                            <img src="../assets/icons/contact/timeline-1.svg" alt="" class="timeline__card-icon">
+                            <span class="timeline__step-label">STEP 01</span>
+                        </div>
+                        <h3 class="timeline__card-title">Submit Your Request</h3>
+                        <p class="timeline__card-text">
+                            We process your asset profile and historical variables immediately. An enterprise operational engineer checks your scenario mapping constraints.
+                        </p>
+                    </div>
+
+                    <div class="timeline__arrow-wrapper">
+                        <img src="../assets/icons/contact/arrow-right.svg" alt="" class="timeline__arrow-icon">
+                    </div>
+
+                    <div class="timeline__card">
+                        <div class="timeline__card-top">
+                            <img src="../assets/icons/contact/timeline-2.svg" alt="" class="timeline__card-icon">
+                            <span class="timeline__step-label">STEP 02</span>
+                        </div>
+                        <h3 class="timeline__card-title">Schedule Your Demo</h3>
+                        <p class="timeline__card-text">
+                            Receive a booking link within 24 hours. We align our simulation models with your operational realities prior to the scheduled calendar event.
+                        </p>
+                    </div>
+
+                    <div class="timeline__arrow-wrapper">
+                        <img src="../assets/icons/contact/arrow-right.svg" alt="" class="timeline__arrow-icon">
+                    </div>
+
+                    <div class="timeline__card">
+                        <div class="timeline__card-top">
+                            <img src="../assets/icons/contact/timeline-3.svg" alt="" class="timeline__card-icon">
+                            <span class="timeline__step-label">STEP 03</span>
+                        </div>
+                        <h3 class="timeline__card-title">Personalized Walkthrough</h3>
+                        <p class="timeline__card-text">
+                            Observe Decisio in a live, sandbox telemetry environment modeled directly on your input limits, testing simulated anomaly de-escalations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="connect">
+            <div class="connect__container">
+                <div class="connect__header">
+                    <h2 class="connect__heading">Other Ways to Connect</h2>
+                    <p class="connect__description">Have operational, security, or enterprise compliance queries? Reach our team directly.</p>
+                </div>
+
+                <div class="connect__grid">
+                    <div class="connect__card">
+                        <div class="connect__card-header">
+                            <img src="../assets/icons/contact/email.svg" alt="" class="connect__card-icon">
+                            <h3 class="connect__card-title">Email Us Directly</h3>
+                        </div>
+                        <a href="mailto:hello@decisio.ai" class="connect__email">hello@decisio.ai</a>
+                        <p class="connect__card-text">
+                            For security questionnaires, compliance paperwork, architecture specifications, and custom procurement processes.
+                        </p>
+                    </div>
+
+                    <div class="connect__card">
+                        <div class="connect__card-header">
+                            <img src="../assets/icons/contact/meeting.svg" alt="" class="connect__card-icon">
+                            <h3 class="connect__card-title">Book a Meeting</h3>
+                        </div>
+                        <div>
+                            <a href="#" class="connect__button">View Available Times</a>
+                        </div>
+                        <p class="connect__card-text">
+                            Choose an instantaneous slot on our scheduler to speak with a solutions engineer about your plant parameters.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="faq">
+            <div class="faq__container">
+                <h2 class="faq__heading">Frequently Asked Questions</h2>
+
+                <div class="faq__list">
+                    <details class="faq__item" open>
+                        <summary class="faq__question">
+                            <span class="faq__question-text">Is the demo personalized to our specific hardware?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p class="faq__text">
+                                Yes. We do not show generic slideshows. We configure our Decision simulation engine to match the parameters, tolerances, and sensor variables of your exact industrial assets (e.g. SCADA systems, modular telemetry feeds) to demonstrate live recommendation outputs.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span class="faq__question-text">Do we need to prepare any data before the call?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p class="faq__text">
+                                Preparation is optional. Providing us with sanitized telemetry logs or summaries of historical failure incidents allows our engineers to preload your scenario before the demo, saving valuable control room evaluation time.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <span class="faq__question-text">How long does it take to deploy Decision?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </summary>
+                        <div class="faq__answer">
+                            <p class="faq__text">
+                                Because Decision is strictly a read-only integrator layer requiring zero write or execution authority, initial telemetry routing and dashboard synchronization takes less than 72 hours under standard enterprise security loops.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="cta-banner">
+            <div class="cta-banner__content">
+                <div class="cta-banner__text">
+                    <h2 class="cta-banner__heading">
+                        Ready to transform how your team makes critical decisions?
+                    </h2>
+                    <p class="cta-banner__description">
+                        Empower your control room with institutional memory and active risk indexing. Zero write authority. 100% human oversight.
+                    </p>
+                </div>
+                <a href="#" class="cta-banner__button">Book a Demo</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__brand">
+                <div class="footer__brand-name">
+                    <img src="../assets/images/decisio-blue-logo.svg" alt="Decisio" class="footer__logo">
+                    <span class="footer__brand-text">Decisio</span>
+                </div>
+                <p class="footer__description">
+                    Precision decision-intelligence for heavy assets. Operating strictly as a read-only advisory system.
+                </p>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Product</h3>
+                <a href="features.html">Features</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="use-cases.html">Use Cases</a>
+                <a href="#">Pricing</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Company</h3>
+                <a href="about.html">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Press</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Resources</h3>
+                <a href="#">Documentation</a>
+                <a href="#">API</a>
+                <a href="#">Status</a>
+                <a href="#">Security</a>
+            </div>
+
+
+            <div class="footer__column">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Compliance</a>
+            </div>
+        </div>
+
+
+        <div class="footer__divider"></div>
+
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2026 Decisio Inc. All rights reserved.</p>
+            <div class="footer__socials">
+                <a href="#" aria-label="LinkedIn"><img src="../assets/images/linkedin.svg" alt=""></a>
+                <a href="#" aria-label="Twitter"><img src="../assets/images/twitter.svg" alt=""></a>
+                <a href="#" aria-label="GitHub"><img src="../assets/images/github.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/navbar.js"></script>
+</body>
+
+
+</html>
