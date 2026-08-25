@@ -261,14 +261,26 @@
     aspect-ratio: 600 / 560;
     overflow: hidden;
     border-radius: 20px;
+    
 }
 
 .failures-section__image {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover;    
+    transition:
+        transform 0.15s ease,
+        filter 300ms ease;
 }
+
+
+
+.failures-section__visual:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #0000000A;
+}
+
 
 .failures-section__cards {
     display: flex;
@@ -897,9 +909,6 @@
     box-shadow: 0 12px 30px #00000020;
 }
 
-.cost-card:hover .cost-card__metric {
-    color: #60A5FA;
-}
 
 .cost-card__metric {
     transition: color 0.2s ease;
