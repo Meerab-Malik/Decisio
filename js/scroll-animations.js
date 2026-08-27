@@ -35,3 +35,27 @@
         observer.observe(element);
     });
 })();
+
+
+document.querySelectorAll('.policy-nav a[href^="#"]').forEach(link => {
+    link.addEventListener('click', event => {
+        const target = document.querySelector(link.getAttribute('href'));
+
+        if (!target) {
+            return;
+        }
+
+        event.preventDefault();
+
+        const targetPosition =
+            target.getBoundingClientRect().top +
+            window.scrollY -
+            (window.innerHeight / 2) +
+            (target.offsetHeight / 2);
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
