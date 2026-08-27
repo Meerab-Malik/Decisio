@@ -1,3 +1,5 @@
+@import url('./animations.css');
+
 /* =========================================================
    FEATURES HERO
    ========================================================= */
@@ -813,13 +815,16 @@
 }
 
 
+.decision-stats > .animate-fade-up {
+    min-width: 0;
+    flex: 1 1 0;
+}
 
 .decision-stats__item {
     min-width: 0;
     display: flex;
     align-items: center;
     gap: clamp(12px, 1.1vw, 16px);
-    flex: 1 1 0;
     transition:
         transform 0.3s ease,
         opacity 0.3s ease;

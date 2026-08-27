@@ -1,3 +1,5 @@
+@import url('./animations.css');
+
 .how-it-works-hero {
 width: 100%;
 box-sizing: border-box;
@@ -1096,9 +1098,10 @@ padding-right: 14px;
     gap: 24px;
 
     transition:
-    transform 200ms ease,
-    box-shadow 200ms ease,
-    border-color 200ms ease;
+        opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
+        transform 700ms cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 200ms ease,
+        border-color 200ms ease;
 }
 
 .authority-card:hover {
@@ -1114,6 +1117,10 @@ padding-right: 14px;
 
 .authority-card:hover .authority-card__accent {
     transform: scaleY(1.2);
+}
+
+.authority-card--delayed {
+    transition-delay: 180ms;
 }
 
 .authority-card__header {
