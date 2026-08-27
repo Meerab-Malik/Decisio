@@ -1,3 +1,5 @@
+@import url('./animations.css');
+
 .problem-hero {
     width: 100%;
     min-height: 732px;
@@ -261,6 +263,9 @@
     aspect-ratio: 600 / 560;
     overflow: hidden;
     border-radius: 20px;
+    transition:
+        transform 0.15s ease,
+        filter 300ms ease;
     
 }
 
@@ -269,9 +274,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;    
-    transition:
-        transform 0.15s ease,
-        filter 300ms ease;
+
 }
 
 
