@@ -2195,10 +2195,19 @@
     text-decoration: none;
 
     white-space: nowrap;
+    transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        border-color 180ms ease;
 }
 
 
 
+.cta-button-white:hover {
+    background: var(--color-brand-primary);
+    color: #FFFFFF;
+    border-color: var(--color-brand-primary);
+}
 
 @media (max-width: 600px) {
 

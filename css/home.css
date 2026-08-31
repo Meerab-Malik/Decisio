@@ -183,7 +183,7 @@
     border-radius: 10px;
 
     transition:
-        transform 20s ease,
+        transform 200ms ease,
 }
 
 .hero__metric:hover {
@@ -1080,7 +1080,7 @@
         minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
 
     gap: 16px;
-
+    display: flex;
     align-items: stretch;
 }
 
@@ -1092,7 +1092,7 @@
     box-sizing: border-box;
 
     padding: 24px;
-
+    flex: 1;
     display: flex;
     flex-direction: column;
 
@@ -1105,6 +1105,8 @@
         transform 200ms ease,
         border-color 200ms ease,
         box-shadow 200ms ease;
+        
+
 }
 
 .process-card:hover {
@@ -2151,105 +2153,4 @@
         line-height: 140%;
     }
 
-}
-
-@keyframes fade-up {
-    from {
-        opacity: 0;
-        transform: translateY(18px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-scale {
-    from {
-        opacity: 0;
-        transform: scale(0.98);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.reveal {
-    opacity: 0;
-}
-
-.reveal.is-visible {
-    animation: fade-up 700ms ease both;
-}
-
-.reveal-fade {
-    opacity: 0;
-}
-
-.reveal-fade.is-visible {
-    animation: fade-in 700ms ease both;
-}
-
-.reveal-scale {
-    opacity: 0;
-}
-
-.reveal-scale.is-visible {
-    animation: fade-scale 800ms ease both;
-}
-
-.reveal-delay-1.is-visible {
-    animation-delay: 100ms;
-}
-
-.reveal-delay-2.is-visible {
-    animation-delay: 200ms;
-}
-
-.reveal-delay-3.is-visible {
-    animation-delay: 300ms;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .reveal,
-    .reveal-fade,
-    .reveal-scale {
-        opacity: 1;
-    }
-
-    .reveal.is-visible,
-    .reveal-fade.is-visible,
-    .reveal-scale.is-visible {
-        animation: none;
-    }
-} 
-
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-.animate-on-scroll.visible {
-  opacity: 1;
-  transform: none;
-}
-@media (prefers-reduced-motion: reduce) {
-  .animate-on-scroll {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
 }

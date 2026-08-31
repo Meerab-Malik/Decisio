@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Decisio</title>
+    <title>Decisio</title>
 
+    
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/global/variables.css">
+    <link rel="stylesheet" href="css/global/components.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/animations.css">
 
-    <link rel="stylesheet" href="../css/variables.css">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/pages/contact.css">
 </head>
 
 
 <body>
 
-
     <header class="navbar">
+
         <a href="index.html" class="navbar__logo">
-            <img src="../assets/images/decisio-logo.svg" alt="Decisio" class="navbar__logo-image">
+
+            <img src="assets/images/decisio-logo.svg" alt="Decisio logo" class="navbar__logo-image">
             <span class="navbar__brand">Decisio</span>
             <span class="navbar__badge">AI</span>
+
         </a>
 
-
         <nav class="navbar__links" aria-label="Main navigation">
-            <a href="../index.html">Home</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="how-it-works.html">How It Works</a>
             <a href="features.html">Features</a>
             <a href="use-cases.html">Use Cases</a>
@@ -47,14 +51,14 @@
 
         <nav class="navbar__mobile" aria-label="Mobile navigation">
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
             <a href="how-it-works.html">How It Works</a>
             <a href="features.html">Features</a>
             <a href="use-cases.html">Use Cases</a>
             <a href="safety.html">Safety</a>
             <a href="the-problem.html">The Problem</a>
             <a href="contact.html">Contact</a>
-            <a href="#" class="navbar__mobile-cta">Request a Demo</a>
-        </nav>
+
     </header>
 
 
@@ -63,65 +67,79 @@
             <div class="contact-hero__container">
                
                 <div class="contact-hero__content">
-                    <span class="contact-hero__eyebrow  animate-on-scroll">Get in touch</span>
+                    <span class="contact-hero__eyebrow reveal">Get in touch</span>
 
 
-                    <h1 class="contact-hero__heading animate-on-scroll">
+                    <h1 class="contact-hero__heading reveal">
                         See Decisio on Your Own Failure Scenarios
                     </h1>
 
 
-                    <p class="contact-hero__description animate-on-scroll">
+                    <p class="contact-hero__description reveal reveal-delay-1">
                         Decisio live demo is specifically configured around your exact ecosystem. Provide us with a summary of past operational incidents or plant configurations, and we will demonstrate how Decisio guides your team dynamically.
                     </p>
 
 
-                    <ul class="contact-hero__features animate-on-scroll" role="list">
+                    <ul class="contact-hero__features reveal reveal-delay-1" role="list">
                         <li class="contact-hero__feature-item">
-                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <img src="assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
                             <span>Personalized walkthrough customized to your specific industry sector</span>
                         </li>
                         <li class="contact-hero__feature-item">
-                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <img src="assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
                             <span>Fast, actionable 30-minute overview focusing strictly on decision parameters</span>
                         </li>
                         <li class="contact-hero__feature-item">
-                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <img src="assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
                             <span>Live generation of decision briefs modeled on your historical incident reports</span>
                         </li>
                         <li class="contact-hero__feature-item">
-                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <img src="assets/icons/contact/circle-check.svg " alt="" class="contact-hero__feature-icon">
                             <span>Read-only architecture review highlighting absolute data isolation</span>
                         </li>
                         <li class="contact-hero__feature-item">
-                            <img src="../assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
+                            <img src="assets/icons/contact/circle-check.svg" alt="" class="contact-hero__feature-icon">
                             <span>Overview of safety-critical technical boundary engineering limits</span>
                         </li>
                     </ul>
 
 
                     <div class="contact-hero__badges">
-                        <div class="contact-hero__badge animate-on-scroll">
-                            <img src="../assets/icons/contact/hero-1.svg" alt="" class="contact-hero__badge-icon">
-                            <span>No Credit Card</span>
+                        <div class=" reveal reveal-delay-1">
+                            <div class="contact-hero__badge">
+                                <img src="assets/icons/contact/hero-1.svg" alt="" class="contact-hero__badge-icon">
+                                <span>No Credit Card</span>
+                            </div>
                         </div>
-                        <div class="contact-hero__badge animate-on-scroll reveal-delay-2">
-                            <img src="../assets/icons/contact/hero-2.svg" alt="" class="contact-hero__badge-icon">
-                            <span>SOC 2 Certified</span>
+
+                        <div class=" reveal reveal-delay-2">
+
+                            <div class="contact-hero__badge reveal reveal-delay-2">
+                                <img src="assets/icons/contact/hero-2.svg" alt="" class="contact-hero__badge-icon">
+                                <span>SOC 2 Certified</span>
+                            </div>
                         </div>
-                        <div class="contact-hero__badge animate-on-scroll reveal-delay-3">
-                            <img src="../assets/icons/contact/hero-3.svg" alt="" class="contact-hero__badge-icon">
-                            <span>Read-only Access</span>
+
+                        <div class=" reveal reveal-delay-3">
+
+                            <div class="contact-hero__badge reveal reveal-delay-3">
+                                <img src="assets/icons/contact/hero-3.svg" alt="" class="contact-hero__badge-icon">
+                                <span>Read-only Access</span>
+                            </div>
                         </div>
-                        <div class="contact-hero__badge  animate-on-scroll reveal-delay-4">
-                            <img src="../assets/icons/contact/hero-4.svg" alt="" class="contact-hero__badge-icon">
-                            <span>Cancel Anytime</span>
+
+                        <div class=" reveal reveal-delay-4">
+
+                            <div class="contact-hero__badge reveal reveal-delay-4">
+                                <img src="assets/icons/contact/hero-4.svg" alt="" class="contact-hero__badge-icon">
+                                <span>Cancel Anytime</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="contact-hero__card animate-on-scroll">
+                <div class="contact-hero__card reveal">
                     <div class="contact-hero__card-header">
                         <h2 class="contact-hero__card-title">Request a Demo</h2>
                         <p class="contact-hero__card-subtitle">Fill out the form below to book your customized scenario brief.</p>
@@ -190,49 +208,58 @@
             <div class="timeline__container">
                 <div class="timeline__header">
                     <span class="timeline__eyebrow">CHRONOLOGY OF PRECISION</span>
-                    <h2 class="timeline__heading animate-on-scroll">What Happens Next</h2>
+                    <h2 class="timeline__heading reveal">What Happens Next</h2>
                 </div>
 
                 <div class="timeline__grid">
-                    <div class="timeline__card animate-on-scroll reveal-delay-1">
-                        <div class="timeline__card-top">
-                            <img src="../assets/icons/contact/timeline-1.svg" alt="" class="timeline__card-icon">
-                            <span class="timeline__step-label">STEP 01</span>
+                    <div class="reveal reveal-delay-1">
+                        <div class="timeline__card">
+                            <div class="timeline__card-top">
+                                <img src="assets/icons/contact/timeline-1.svg" alt="" class="timeline__card-icon">
+                                <span class="timeline__step-label">STEP 01</span>
+                            </div>
+                            <h3 class="timeline__card-title">Submit Your Request</h3>
+                            <p class="timeline__card-text">
+                                We process your asset profile and historical variables immediately. An enterprise operational engineer checks your scenario mapping constraints.
+                            </p>
                         </div>
-                        <h3 class="timeline__card-title">Submit Your Request</h3>
-                        <p class="timeline__card-text">
-                            We process your asset profile and historical variables immediately. An enterprise operational engineer checks your scenario mapping constraints.
-                        </p>
                     </div>
 
                     <div class="timeline__arrow-wrapper">
-                        <img src="../assets/icons/contact/arrow-right.svg" alt="" class="timeline__arrow-icon">
+                        <img src="assets/icons/contact/arrow-right.svg" alt="" class="timeline__arrow-icon">
                     </div>
 
-                    <div class="timeline__card  animate-on-scroll reveal-delay-2">
-                        <div class="timeline__card-top">
-                            <img src="../assets/icons/contact/timeline-2.svg" alt="" class="timeline__card-icon">
-                            <span class="timeline__step-label">STEP 02</span>
+
+                    <div class="reveal reveal-delay-2">
+
+                        <div class="timeline__card">
+                            <div class="timeline__card-top">
+                                <img src="assets/icons/contact/timeline-2.svg" alt="" class="timeline__card-icon">
+                                <span class="timeline__step-label">STEP 02</span>
+                            </div>
+                            <h3 class="timeline__card-title">Schedule Your Demo</h3>
+                            <p class="timeline__card-text">
+                                Receive a booking link within 24 hours. We align our simulation models with your operational realities prior to the scheduled calendar event.
+                            </p>
                         </div>
-                        <h3 class="timeline__card-title">Schedule Your Demo</h3>
-                        <p class="timeline__card-text">
-                            Receive a booking link within 24 hours. We align our simulation models with your operational realities prior to the scheduled calendar event.
-                        </p>
                     </div>
 
                     <div class="timeline__arrow-wrapper">
-                        <img src="../assets/icons/contact/arrow-right.svg" alt="" class="timeline__arrow-icon">
+                        <img src="assets/icons/contact/arrow-right.svg" alt="" class="timeline__arrow-icon">
                     </div>
 
-                    <div class="timeline__card animate-on-scroll reveal-delay-3">
-                        <div class="timeline__card-top">
-                            <img src="../assets/icons/contact/timeline-3.svg" alt="" class="timeline__card-icon">
-                            <span class="timeline__step-label">STEP 03</span>
+                    <div class="reveal reveal-delay-3">
+
+                        <div class="timeline__card">
+                            <div class="timeline__card-top">
+                                <img src="assets/icons/contact/timeline-3.svg" alt="" class="timeline__card-icon">
+                                <span class="timeline__step-label">STEP 03</span>
+                            </div>
+                            <h3 class="timeline__card-title">Personalized Walkthrough</h3>
+                            <p class="timeline__card-text">
+                                Observe Decisio in a live, sandbox telemetry environment modeled directly on your input limits, testing simulated anomaly de-escalations.
+                            </p>
                         </div>
-                        <h3 class="timeline__card-title">Personalized Walkthrough</h3>
-                        <p class="timeline__card-text">
-                            Observe Decisio in a live, sandbox telemetry environment modeled directly on your input limits, testing simulated anomaly de-escalations.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -242,14 +269,14 @@
         <section class="connect">
             <div class="connect__container">
                 <div class="connect__header">
-                    <h2 class="connect__heading animate-on-scroll">Other Ways to Connect</h2>
-                    <p class="connect__description animate-on-scroll">Have operational, security, or enterprise compliance queries? Reach our team directly.</p>
+                    <h2 class="connect__heading reveal">Other Ways to Connect</h2>
+                    <p class="connect__description reveal">Have operational, security, or enterprise compliance queries? Reach our team directly.</p>
                 </div>
 
-                <div class="connect__grid animate-on-scroll">
+                <div class="connect__grid reveal">
                     <div class="connect__card">
                         <div class="connect__card-header">
-                            <img src="../assets/icons/contact/email.svg" alt="" class="connect__card-icon">
+                            <img src="assets/icons/contact/email.svg" alt="" class="connect__card-icon">
                             <h3 class="connect__card-title">Email Us Directly</h3>
                         </div>
                         <a href="mailto:hello@decisio.ai" class="connect__email">hello@decisio.ai</a>
@@ -260,7 +287,7 @@
 
                     <div class="connect__card">
                         <div class="connect__card-header">
-                            <img src="../assets/icons/contact/meeting.svg" alt="" class="connect__card-icon">
+                            <img src="assets/icons/contact/meeting.svg" alt="" class="connect__card-icon">
                             <h3 class="connect__card-title">Book a Meeting</h3>
                         </div>
                         <div>
@@ -278,52 +305,60 @@
 
         <section class="faq">
             <div class="faq__container">
-                <h2 class="faq__heading animate-on-scroll">Frequently Asked Questions</h2>
+                <h2 class="faq__heading reveal">Frequently Asked Questions</h2>
 
-                <div class="faq__list animate-on-scroll">
-                    <details class="faq__item" open>
-                        <summary class="faq__question">
-                            <span class="faq__question-text">Is the demo personalized to our specific hardware?</span>
-                            <span class="faq__icon" aria-hidden="true"></span>
-                        </summary>
-                        <div class="faq__answer">
-                            <p class="faq__text">
-                                Yes. We do not show generic slideshows. We configure our Decision simulation engine to match the parameters, tolerances, and sensor variables of your exact industrial assets (e.g. SCADA systems, modular telemetry feeds) to demonstrate live recommendation outputs.
-                            </p>
-                        </div>
-                    </details>
+                <div class="faq__list">
+                    <div class="reveal reveal-delay-1">
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
-                            <span class="faq__question-text">Do we need to prepare any data before the call?</span>
-                            <span class="faq__icon" aria-hidden="true"></span>
-                        </summary>
-                        <div class="faq__answer">
-                            <p class="faq__text">
-                                Preparation is optional. Providing us with sanitized telemetry logs or summaries of historical failure incidents allows our engineers to preload your scenario before the demo, saving valuable control room evaluation time.
-                            </p>
-                        </div>
-                    </details>
+                        <details class="faq__item" open>
+                            <summary class="faq__question">
+                                <span class="faq__question-text">Is the demo personalized to our specific hardware?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p class="faq__text">
+                                    Yes. We do not show generic slideshows. We configure our Decision simulation engine to match the parameters, tolerances, and sensor variables of your exact industrial assets (e.g. SCADA systems, modular telemetry feeds) to demonstrate live recommendation outputs.
+                                </p>
+                            </div>
+                        </details>
 
-                    <details class="faq__item">
-                        <summary class="faq__question">
-                            <span class="faq__question-text">How long does it take to deploy Decision?</span>
-                            <span class="faq__icon" aria-hidden="true"></span>
-                        </summary>
-                        <div class="faq__answer">
-                            <p class="faq__text">
-                                Because Decision is strictly a read-only integrator layer requiring zero write or execution authority, initial telemetry routing and dashboard synchronization takes less than 72 hours under standard enterprise security loops.
-                            </p>
-                        </div>
-                    </details>
+                    </div>
+
+                    <div class="reveal reveal-delay-2">
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <span class="faq__question-text">Do we need to prepare any data before the call?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p class="faq__text">
+                                    Preparation is optional. Providing us with sanitized telemetry logs or summaries of historical failure incidents allows our engineers to preload your scenario before the demo, saving valuable control room evaluation time.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <div class="reveal reveal-delay-3">
+
+                        <details class="faq__item">
+                            <summary class="faq__question">
+                                <span class="faq__question-text">How long does it take to deploy Decision?</span>
+                                <span class="faq__icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="faq__answer">
+                                <p class="faq__text">
+                                    Because Decision is strictly a read-only integrator layer requiring zero write or execution authority, initial telemetry routing and dashboard synchronization takes less than 72 hours under standard enterprise security loops.
+                                </p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
             </div>
         </section>
 
-
-
         <section class="cta-banner">
-            <div class="cta-banner__content animate-on-scroll">
+            <div class="cta-banner__content reveal">
                 <div class="cta-banner__text">
                     <h2 class="cta-banner__heading">
                         Ready to transform how your team makes critical decisions?
@@ -335,75 +370,115 @@
                 <a href="#" class="cta-banner__button">Book a Demo</a>
             </div>
         </section>
+
     </main>
 
-
+   
     <footer class="footer">
+
         <div class="footer__content">
+
             <div class="footer__brand">
+
                 <div class="footer__brand-name">
-                    <img src="../assets/images/decisio-blue-logo.svg" alt="Decisio" class="footer__logo">
-                    <span class="footer__brand-text">Decisio</span>
+
+                    <img src="assets/images/decisio-blue-logo.svg" alt="Decisio" class="footer__logo">
+
+                    <span class="footer__brand-text">
+                        Decisio
+                    </span>
+
                 </div>
+
                 <p class="footer__description">
-                    Precision decision-intelligence for heavy assets. Operating strictly as a read-only advisory system.
+                    Precision decision-intelligence for heavy assets.
+                    Operating strictly as a read-only advisory system.
                 </p>
+
             </div>
 
-
             <div class="footer__column">
-                <h3>Product</h3>
+
+                <h3>
+                    Product
+                </h3>
+
                 <a href="features.html">Features</a>
                 <a href="how-it-works.html">How It Works</a>
-                <a href="use-cases.html">Use Cases</a>
                 <a href="#">Pricing</a>
+
             </div>
 
-
             <div class="footer__column">
-                <h3>Company</h3>
+
+                <h3>
+                    Company
+                </h3>
+
                 <a href="about.html">About</a>
-                <a href="#">Careers</a>
-                <a href="#">Blog</a>
-                <a href="#">Press</a>
+                <a href="safety.html">Safety</a>
+                <a href="contact.html">Contact</a>
+
             </div>
 
-
             <div class="footer__column">
-                <h3>Resources</h3>
+
+                <h3>
+                    Resources
+                </h3>
+
                 <a href="#">Documentation</a>
                 <a href="#">API</a>
-                <a href="#">Status</a>
                 <a href="#">Security</a>
+
             </div>
 
-
             <div class="footer__column">
-                <h3>Legal</h3>
+
+                <h3>
+                    Legal
+                </h3>
+
                 <a href="privacy.html">Privacy</a>
                 <a href="terms.html">Terms</a>
                 <a href="cookie-policy.html">Cookie Policy</a>
-                <a href="#">Compliance</a>
-            </div>
-        </div>
 
+            </div>
+
+        </div>
 
         <div class="footer__divider"></div>
 
-
         <div class="footer__bottom">
-            <p class="footer__copyright">© 2026 Decisio Inc. All rights reserved.</p>
+
+            <p class="footer__copyright">
+                © 2026 Decisio Inc. All rights reserved.
+            </p>
+
             <div class="footer__socials">
-                <a href="#" aria-label="LinkedIn"><img src="../assets/images/linkedin.svg" alt=""></a>
-                <a href="#" aria-label="Twitter"><img src="../assets/images/twitter.svg" alt=""></a>
-                <a href="#" aria-label="GitHub"><img src="../assets/images/github.svg" alt=""></a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <img src="assets/images/linkedin.svg" alt="">
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <img src="assets/images/twitter.svg" alt="">
+                </a>
+
+                <a href="#" aria-label="GitHub">
+                    <img src="assets/images/github.svg" alt="">
+                </a>
+
             </div>
+
         </div>
+
     </footer>
 
+    <script src="js/scroll-animations.js" defer></script>
+    <script src="js/navbar.js" defer></script>
 
-    <script src="../js/navbar.js"></script>
-    <script src="../js/scroll-animations.js"></script>
+
 </body>
 
 

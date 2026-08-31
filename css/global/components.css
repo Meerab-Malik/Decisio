@@ -25,6 +25,9 @@
 
     background: var(--color-background-primary);
     border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 
@@ -113,13 +116,12 @@
     align-items: center;
     justify-content: center;
 
-
-
-    padding: 14px 30px;
+    padding: 13px 29px;
 
     background: var(--color-brand-primary);
     color: var(--color-text-inverse);
 
+    border: 1px solid var(--color-brand-primary);
     border-radius: var(--radius-button);
 
     font-family: var(--font-primary);
@@ -128,17 +130,19 @@
     line-height: 1;
 
     text-decoration: none;
+
+    transition:
+        background-color 180ms ease,
+        color 180ms ease,
+        border-color 180ms ease;
 }
 
 
 .navbar__cta:hover {
-    color:var(--color-brand-primary) ;
-    border: 1px solid var(--color-brand-primary);
+    color: var(--color-brand-primary);
     background-color: transparent;
-    padding: 13px 29px;
-
+    border-color: var(--color-brand-primary);
 }
-
 
 
 .navbar__menu {
@@ -589,6 +593,9 @@
     text-decoration: none;
 
     white-space: nowrap;
+    transition:
+        background-color 250ms ease,
+        color 250ms ease;
 }
 
 
