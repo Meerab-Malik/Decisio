@@ -1,13 +1,10 @@
 (() => {
-    const elements = document.querySelectorAll(
-        '.animate-on-scroll, .animate-fade-up, .animate-fade-in, .animate-scale-in, .reveal'
-    );
+    const elements = document.querySelectorAll('.reveal');
 
     if (!('IntersectionObserver' in window)) {
         elements.forEach(element => {
-            element.classList.add('visible', 'is-visible', 'animate-start');
+            element.classList.add('is-visible');
         });
-
         return;
     }
 
@@ -15,12 +12,7 @@
         entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add(
-                        'visible',
-                        'is-visible',
-                        'animate-start'
-                    );
-
+                    entry.target.classList.add('is-visible');
                     observer.unobserve(entry.target);
                 }
             });
@@ -35,7 +27,6 @@
         observer.observe(element);
     });
 })();
-
 
 document.querySelectorAll('.policy-nav a[href^="#"]').forEach(link => {
     link.addEventListener('click', event => {

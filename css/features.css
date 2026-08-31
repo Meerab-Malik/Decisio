@@ -831,9 +831,9 @@
 }
 
 .decision-stats__item:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
+    filter: drop-shadow(0 8px 16px rgba(15, 23, 42, 0.08));
 }
-
 
 
 .decision-stats__icon {
@@ -846,9 +846,17 @@
     transition: transform 0.3s ease;
 }
 
+
 .decision-stats__item:hover .decision-stats__icon {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
+
+.decision-stats__item:hover .decision-stats__heading {
+    color: var(--color-brand-primary);
+}
+
+
+
 
 .decision-stats__content {
     min-width: 0;

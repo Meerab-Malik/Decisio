@@ -4,81 +4,44 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Decisio</title>
 
-    <link rel="stylesheet" href="css/variables.css">
-
-    <link rel="stylesheet" href="css/global.css">
-
-    <link rel="stylesheet" href="css/components.css">
-
-    <link rel="stylesheet" href="css/pages/home.css">
-    <link rel="stylesheet" href="css/pages/animations.css">
-
+    
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/global/variables.css">
+    <link rel="stylesheet" href="css/global/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
 
 </head>
 
 
 <body>
 
-
     <header class="navbar">
 
+        <a href="index.html" class="navbar__logo">
 
-        <a href="#" class="navbar__logo">
-
-            <img src="./assets/images/decisio-logo.svg" alt="Decisio" class="navbar__logo-image">
-
-            <span class="navbar__brand">
-                Decisio
-            </span>
-
-            <span class="navbar__badge">
-                AI
-            </span>
+            <img src="assets/images/decisio-logo.svg" alt="Decisio logo" class="navbar__logo-image">
+            <span class="navbar__brand">Decisio</span>
+            <span class="navbar__badge">AI</span>
 
         </a>
 
-
         <nav class="navbar__links" aria-label="Main navigation">
-
-            <a href="index.html">
-                Home
-            </a>
-
-            <a href="pages/how-it-works.html">
-                How It Works
-            </a>
-
-            <a href="pages/features.html">
-                Features
-            </a>
-
-            <a href="pages/use-cases.html">
-                Use Cases
-            </a>
-
-            <a href="pages/safety.html">
-                Safety
-            </a>
-
-            <a href="pages/the-problem.html">
-                The Problem
-            </a>
-
-            <a href="pages/contact.html">
-                Contact
-            </a>
-
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="features.html">Features</a>
+            <a href="use-cases.html">Use Cases</a>
+            <a href="safety.html">Safety</a>
+            <a href="the-problem.html">The Problem</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
 
-        <a href="#" class="navbar__cta">
-            Request a Demo
-        </a>
+        <a href="#" class="navbar__cta">Request a Demo</a>
 
 
         <button class="navbar__menu" type="button" aria-label="Open navigation" aria-expanded="false">
@@ -87,41 +50,19 @@
 
 
         <nav class="navbar__mobile" aria-label="Mobile navigation">
-
-            <a href="#">Home</a>
-
-            <a href="pages/how-it-works.html">
-                How It Works
-            </a>
-
-            <a href="pages/features.html">
-                Features
-            </a>
-
-            <a href="pages/use-cases.html">
-                Use Cases
-            </a>
-
-            <a href="pages/safety.html">Safety</a>
-
-            <a href="pages/the-problem.html">
-                The Problem
-            </a>
-
-            <a href="pages/contact.html">Contact</a>
-
-            <a href="#" class="navbar__mobile-cta">
-                Request a Demo
-            </a>
-
-        </nav>
-
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="features.html">Features</a>
+            <a href="use-cases.html">Use Cases</a>
+            <a href="safety.html">Safety</a>
+            <a href="the-problem.html">The Problem</a>
+            <a href="contact.html">Contact</a>
 
     </header>
 
 
     <main>
-
 
         <section class="hero">
 
@@ -129,15 +70,15 @@
 
                 <div class="hero__left">
 
-                    <div class="hero__eyebrow animate-fade-in animate-start">
+                    <div class="hero__eyebrow reveal">
                         Industrial Decision Layer
                     </div>
 
-                    <h1 class="hero__heading animate-fade-up">
+                    <h1 class="hero__heading reveal">
                         Lead the decision before you touch the machine
                     </h1>
 
-                    <p class="hero__description animate-fade-up animate-delay-2">
+                    <p class="hero__description reveal reveal-delay-2">
                         Decisio is the AI-powered decision layer for heavy industrial
                         operations. It analyzes risk, recommends optimal actions, and
                         logs institutional memory — but never executes. Your human
@@ -146,17 +87,17 @@
 
                     <div class="hero__actions">
 
-                        <a href="#" class="hero__button hero__button--primary animate-fade-up animate-delay-1">
+                        <a href="#" class="hero__button hero__button--primary reveal reveal-delay-1">
                             Request a Demo
                         </a>
 
-                        <a href="#" class="hero__button hero__button--secondary animate-fade-up animate-delay-2">
+                        <a href="#" class="hero__button hero__button--secondary reveal reveal-delay-2">
                             Learn More
                         </a>
 
                     </div>
 
-                    <div class="hero__metrics animate-fade-up animate-delay-1">
+                    <div class="hero__metrics reveal reveal-delay-1">
 
                         <div class="hero__metric">
                             <span class="hero__metric-number">0%</span>
@@ -186,8 +127,8 @@
 
                 <div class="hero__right">
 
-                    <img src="./assets/images/homepage/hero-visual.svg"
-                        alt="Decisio industrial decision intelligence dashboard" class="hero__visual animate-scale-in">
+                    <img src="assets/images/homepage/hero-visual.svg"
+                        alt="Decisio industrial decision intelligence dashboard" class="hero__visual reveal">
 
                 </div>
 
@@ -195,8 +136,7 @@
 
         </section>
 
-
-        <section class="decision-layer animate-on-scroll">
+        <section class="decision-layer reveal">
 
             <div class="decision-layer__content">
 
@@ -216,48 +156,52 @@
 
                 <div class="decision-layer__steps">
 
-                    <div class="decision-layer__step animate-on-scroll animate-fade-up reveal-delay-1">
+                    <div  class="reveal reveal-delay-1">
+                        <div class="decision-layer__step">
 
-                        <img src="./assets/icons/homepage/decision-1.svg" alt="" class="decision-layer__icon">
+                            <img src="assets/icons/homepage/decision-1.svg" alt="" class="decision-layer__icon">
 
-                        <h3 class="decision-layer__step-title">
-                            1. Analysis
-                        </h3>
+                            <h3 class="decision-layer__step-title">
+                                1. Analysis
+                            </h3>
 
-                        <p class="decision-layer__step-description">
-                            Aggregates SCADA, log metrics, and historic runtimes dynamically.
-                        </p>
+                            <p class="decision-layer__step-description">
+                                Aggregates SCADA, log metrics, and historic runtimes dynamically.
+                            </p>
 
+                        </div>
                     </div>
 
+                    <div class="reveal reveal-delay-2">
+                        <div class="decision-layer__step">
 
-                    <div class="decision-layer__step animate-on-scroll animate-fade-up reveal-delay-2">
+                            <img src="assets/icons/homepage/decision-2.svg" alt="" class="decision-layer__icon">
 
-                        <img src="./assets/icons/homepage/decision-2.svg" alt="" class="decision-layer__icon">
+                            <h3 class="decision-layer__step-title">
+                                2. Recommendation
+                            </h3>
 
-                        <h3 class="decision-layer__step-title">
-                            2. Recommendation
-                        </h3>
+                            <p class="decision-layer__step-description">
+                                Synthesizes real-time options backed by absolute physics constraints.
+                            </p>
 
-                        <p class="decision-layer__step-description">
-                            Synthesizes real-time options backed by absolute physics constraints.
-                        </p>
-
+                        </div>
                     </div>
 
+                    <div class="reveal reveal-delay-3">
+                        <div class="decision-layer__step ">
 
-                    <div class="decision-layer__step animate-on-scroll animate-fade-up reveal-delay-3">
+                            <img src="assets/icons/homepage/decision-3.svg" alt="" class="decision-layer__icon">
 
-                        <img src="./assets/icons/homepage/decision-3.svg" alt="" class="decision-layer__icon">
+                            <h3 class="decision-layer__step-title">
+                                3. Documentation
+                            </h3>
 
-                        <h3 class="decision-layer__step-title">
-                            3. Documentation
-                        </h3>
+                            <p class="decision-layer__step-description">
+                                Permanently indexes the decision, justification, and final outcome.
+                            </p>
 
-                        <p class="decision-layer__step-description">
-                            Permanently indexes the decision, justification, and final outcome.
-                        </p>
-
+                        </div>
                     </div>
 
                 </div>
@@ -266,8 +210,7 @@
 
         </section>
 
-
-        <section class="hazard-section animate-on-scroll">
+        <section class="hazard-section reveal">
 
             <div class="hazard-section__content">
 
@@ -281,76 +224,80 @@
 
                 <div class="hazard-section__cards">
 
-                    <article class="hazard-card animate-on-scroll">
+                    <div class="reveal">
+                        <article class="hazard-card">
 
-                        <div class="hazard-card__top">
+                            <div class="hazard-card__top">
 
-                            <img src="./assets/icons/homepage/hazard-1.svg" alt="" class="hazard-card__icon">
+                                <img src="assets/icons/homepage/hazard-1.svg" alt="" class="hazard-card__icon">
 
-                            <span class="hazard-card__number">
-                                01
-                            </span>
+                                <span class="hazard-card__number">
+                                    01
+                                </span>
 
-                        </div>
+                            </div>
 
-                        <h3 class="hazard-card__heading">
-                            Failures aren't only technical
-                        </h3>
+                            <h3 class="hazard-card__heading">
+                                Failures aren't only technical
+                            </h3>
 
-                        <p class="hazard-card__description" style="margin-top: 30px">
-                            Most industrial incidents trace back to decisions made under extreme cognitive load. Teams
-                            have high-fidelity sensors but lack high-fidelity judgment tools.
-                        </p>
+                            <p class="hazard-card__description" style="margin-top: 30px">
+                                Most industrial incidents trace back to decisions made under extreme cognitive load. Teams
+                                have high-fidelity sensors but lack high-fidelity judgment tools.
+                            </p>
 
-                    </article>
+                        </article>
+                    </div>
 
+                    <div class="reveal">
+                        <article class="hazard-card">
 
-                    <article class="hazard-card animate-on-scroll">
+                            <div class="hazard-card__top">
 
-                        <div class="hazard-card__top">
+                                <img src="assets/icons/homepage/hazard-2.svg" alt="" class="hazard-card__icon">
 
-                            <img src="./assets/icons/homepage/hazard-2.svg" alt="" class="hazard-card__icon">
+                                <span class="hazard-card__number">
+                                    02
+                                </span>
 
-                            <span class="hazard-card__number">
-                                02
-                            </span>
+                            </div>
 
-                        </div>
+                            <h3 class="hazard-card__heading">
+                                Decisions happen under pressure
+                            </h3>
 
-                        <h3 class="hazard-card__heading">
-                            Decisions happen under pressure
-                        </h3>
+                            <p class="hazard-card__description">
+                                When an alarm flashes, operators have seconds. They face fragmented dashboard readouts
+                                scattered across legacy telemetry architectures, creating analysis paralysis.
+                            </p>
 
-                        <p class="hazard-card__description">
-                            When an alarm flashes, operators have seconds. They face fragmented dashboard readouts
-                            scattered across legacy telemetry architectures, creating analysis paralysis.
-                        </p>
+                        </article>
+                    </div>
 
-                    </article>
+                    <div class="reveal">
+                        <article class="hazard-card">
 
+                            <div class="hazard-card__top">
 
-                    <article class="hazard-card animate-on-scroll">
+                                <img src="assets/icons/homepage/hazard-3.svg" alt="" class="hazard-card__icon">
 
-                        <div class="hazard-card__top">
+                                <span class="hazard-card__number">
+                                    03
+                                </span>
 
-                            <img src="./assets/icons/homepage/hazard-3.svg" alt="" class="hazard-card__icon">
+                            </div>
 
-                            <span class="hazard-card__number">
-                                03
-                            </span>
+                            <h3 class="hazard-card__heading">
+                                Wrong decisions cost more than failures
+                            </h3>
 
-                        </div>
+                            <p class="hazard-card__description">
+                                An incorrect emergency action can trigger systemic failures, safety incidents, and cascading
+                                electrical violations — often resulting in millions in unneeded losses.
+                            </p>
 
-                        <h3 class="hazard-card__heading">
-                            Wrong decisions cost more than failures
-                        </h3>
-
-                        <p class="hazard-card__description">
-                            An incorrect emergency action can trigger systemic failures, safety incidents, and cascading
-                            electrical violations — often resulting in millions in unneeded losses.
-                        </p>
-
-                    </article>
+                        </article>
+                    </div>
 
                 </div>
 
@@ -358,130 +305,131 @@
 
         </section>
 
-
-        <section class="process-section animate-on-scroll">
+        <section class="process-section">
 
             <div class="process-section__content">
 
-                <div class="process-section__eyebrow">
+                <div class="process-section__eyebrow reveal">
                     CHRONOLOGY OF PRECISON
                 </div>
 
-                <h2 class="process-section__heading">
+                <h2 class="process-section__heading reveal">
                     How Decisio Works
                 </h2>
 
                 <div class="process-section__steps">
+                    
+                    <div class="reveal reveal-delay-1">
+                        <article class="process-card ">
 
-                    <article class="process-card animate-on-scroll">
+                            <div class="process-card__top">
 
-                        <div class="process-card__top">
+                                <img src="assets/icons/homepage/process-1.svg" alt="" class="process-card__icon">
 
-                            <img src="./assets/icons/homepage/process-1.svg" alt="" class="process-card__icon">
+                                <span class="process-card__number">
+                                    STEP 01
+                                </span>
 
-                            <span class="process-card__number">
-                                STEP 01
-                            </span>
+                            </div>
 
-                        </div>
+                            <h3 class="process-card__heading">
+                                Report
+                            </h3>
 
-                        <h3 class="process-card__heading">
-                            Report
-                        </h3>
+                            <p class="process-card__description">
+                                Consumes raw sensory logs, historical operating standards, and legacy SCADA data via
+                                lightweight endpoints.
+                            </p>
 
-                        <p class="process-card__description">
-                            Consumes raw sensory logs, historical operating standards, and legacy SCADA data via
-                            lightweight endpoints.
-                        </p>
-
-                    </article>
-
-
-                    <div class="process-section__arrow" aria-hidden="true">
-                        <img src="./assets/icons/homepage/arrow-right.svg" alt="">
+                        </article>
                     </div>
 
-
-                    <article class="process-card animate-on-scroll">
-
-                        <div class="process-card__top">
-
-                            <img src="./assets/icons/homepage/process-2.svg" alt="" class="process-card__icon">
-
-                            <span class="process-card__number">
-                                STEP 02
-                            </span>
-
-                        </div>
-
-                        <h3 class="process-card__heading">
-                            Question
-                        </h3>
-
-                        <p class="process-card__description">
-                            Decisio monitors anomalies, instantly isolates issues, and formats the problem as a critical
-                            decision point.
-                        </p>
-
-                    </article>
-
-
                     <div class="process-section__arrow" aria-hidden="true">
-                        <img src="./assets/icons/homepage/arrow-right.svg" alt="">
+                        <img src="assets/icons/homepage/arrow-right.svg" alt="">
                     </div>
 
+                    <div class="reveal reveal-delay-2">
+                        <article class="process-card">
 
-                    <article class="process-card animate-on-scroll">
+                            <div class="process-card__top">
 
-                        <div class="process-card__top">
+                                <img src="assets/icons/homepage/process-2.svg" alt="" class="process-card__icon">
 
-                            <img src="./assets/icons/homepage/process-3.svg" alt="" class="process-card__icon">
+                                <span class="process-card__number">
+                                    STEP 02
+                                </span>
 
-                            <span class="process-card__number">
-                                STEP 03
-                            </span>
+                            </div>
 
-                        </div>
+                            <h3 class="process-card__heading">
+                                Question
+                            </h3>
 
-                        <h3 class="process-card__heading">
-                            Decision Brief
-                        </h3>
+                            <p class="process-card__description">
+                                Decisio monitors anomalies, instantly isolates issues, and formats the problem as a critical
+                                decision point.
+                            </p>
 
-                        <p class="process-card__description">
-                            Generates an interactive risk brief complete with mitigation alternatives, safety margins,
-                            and trade-offs.
-                        </p>
-
-                    </article>
-
-
-                    <div class="process-section__arrow" aria-hidden="true">
-                        <img src="./assets/icons/homepage/arrow-right.svg" alt="">
+                        </article>
                     </div>
 
+                    <div class="process-section__arrow" aria-hidden="true">
+                        <img src="assets/icons/homepage/arrow-right.svg" alt="">
+                    </div>
 
-                    <article class="process-card animate-on-scroll">
+                    <div class="reveal reveal-delay-3">
+                        <article class="process-card">
 
-                        <div class="process-card__top">
+                            <div class="process-card__top">
 
-                            <img src="./assets/icons/homepage/process-4.svg" alt="" class="process-card__icon">
+                                <img src="assets/icons/homepage/process-3.svg" alt="" class="process-card__icon">
 
-                            <span class="process-card__number">
-                                STEP 04
-                            </span>
+                                <span class="process-card__number">
+                                    STEP 03
+                                </span>
 
-                        </div>
+                            </div>
 
-                        <h3 class="process-card__heading">
-                            Outcome
-                        </h3>
+                            <h3 class="process-card__heading">
+                                Decision Brief
+                            </h3>
 
-                        <p class="process-card__description">
-                            Indexes operator choices and runtime consequences, converting raw system action into indexed
-                            institutional knowledge.
-                        </p>
+                            <p class="process-card__description">
+                                Generates an interactive risk brief complete with mitigation alternatives, safety margins,
+                                and trade-offs.
+                            </p>
 
-                    </article>
+                        </article>
+                    </div>
+
+                    <div class="process-section__arrow" aria-hidden="true">
+                        <img src="assets/icons/homepage/arrow-right.svg" alt="">
+                    </div>
+
+                    <div class="reveal reveal-delay-4">
+                        <article class="process-card">
+
+                            <div class="process-card__top">
+
+                                <img src="assets/icons/homepage/process-4.svg" alt="" class="process-card__icon">
+
+                                <span class="process-card__number">
+                                    STEP 04
+                                </span>
+
+                            </div>
+
+                            <h3 class="process-card__heading">
+                                Outcome
+                            </h3>
+
+                            <p class="process-card__description">
+                                Indexes operator choices and runtime consequences, converting raw system action into indexed
+                                institutional knowledge.
+                            </p>
+
+                        </article>
+                    </div>
 
                 </div>
 
@@ -489,97 +437,103 @@
 
         </section>
 
-
-        <section class="standard-section animate-on-scroll">
+        <section class="standard-section">
 
             <div class="standard-section__content">
 
-                <div class="standard-section__eyebrow">
+                <div class="standard-section__eyebrow reveal">
                     The Decisio Standard
                 </div>
 
-                <h2 class="standard-section__heading">
+                <h2 class="standard-section__heading reveal">
                     What Makes Decisio Different
                 </h2>
 
                 <div class="standard-section__grid">
 
-                    <article class="standard-card">
+                    <div class="reveal reveal-delay-1">
+                        <article class="standard-card">
 
-                        <div class="standard-card__top">
-                            <h3 class="standard-card__heading">
-                                Decision First
-                            </h3>
+                            <div class="standard-card__top">
+                                <h3 class="standard-card__heading">
+                                    Decision First
+                                </h3>
 
-                            <span class="standard-card__tag">
-                                PRINCIPLE
-                            </span>
-                        </div>
+                                <span class="standard-card__tag">
+                                    PRINCIPLE
+                                </span>
+                            </div>
 
-                        <p class="standard-card__description">
-                            While legacy monitoring platforms drown operations in thousands of warnings, Decisio
-                            initiates action immediately from critical decision paths down.
-                        </p>
+                            <p class="standard-card__description">
+                                While legacy monitoring platforms drown operations in thousands of warnings, Decisio
+                                initiates action immediately from critical decision paths down.
+                            </p>
 
-                    </article>
+                        </article>
+                    </div>
 
-                    <article class="standard-card animate-on-scroll">
+                    <div class="reveal reveal-delay-2">
+                        <article class="standard-card">
 
-                        <div class="standard-card__top">
-                            <h3 class="standard-card__heading">
-                                Process Failure Aware
-                            </h3>
+                            <div class="standard-card__top">
+                                <h3 class="standard-card__heading">
+                                    Process Failure Aware
+                                </h3>
 
-                            <span class="standard-card__tag">
-                                INTELLIGENCE
-                            </span>
-                        </div>
+                                <span class="standard-card__tag">
+                                    INTELLIGENCE
+                                </span>
+                            </div>
 
-                        <p class="standard-card__description">
-                            Our system structures recommendations because we recognize that machinery breaks due to
-                            human decisions, not just systemic faults.
-                        </p>
+                            <p class="standard-card__description">
+                                Our system structures recommendations because we recognize that machinery breaks due to
+                                human decisions, not just systemic faults.
+                            </p>
 
-                    </article>
+                        </article>
+                    </div>
 
-                    <article class="standard-card animate-on-scroll">
+                    <div class="reveal reveal-delay-3">
+                        <article class="standard-card">
 
-                        <div class="standard-card__top">
-                            <h3 class="standard-card__heading">
-                                Safety as Constraints
-                            </h3>
+                            <div class="standard-card__top">
+                                <h3 class="standard-card__heading">
+                                    Safety as Constraints
+                                </h3>
 
-                            <span class="standard-card__tag">
-                                HARD CONSTRAINT
-                            </span>
-                        </div>
+                                <span class="standard-card__tag">
+                                    HARD CONSTRAINT
+                                </span>
+                            </div>
 
-                        <p class="standard-card__description">
-                            We do not formulate advice and apply safety as an afterthought. Safety margins are
-                            integrated as unbreakable physical boundaries before recommendations are computed.
-                        </p>
+                            <p class="standard-card__description">
+                                We do not formulate advice and apply safety as an afterthought. Safety margins are
+                                integrated as unbreakable physical boundaries before recommendations are computed.
+                            </p>
 
-                    </article>
+                        </article>
+                    </div>
 
+                    <div class="reveal reveal-delay-4">
+                        <article class="standard-card">
 
-                    <article class="standard-card animate-on-scroll">
+                            <div class="standard-card__top">
+                                <h3 class="standard-card__heading">
+                                    Institutional Decision Memory
+                                </h3>
 
-                        <div class="standard-card__top">
-                            <h3 class="standard-card__heading">
-                                Institutional Decision Memory
-                            </h3>
+                                <span class="standard-card__tag">
+                                    KNOWLEDGE INDEX
+                                </span>
+                            </div>
 
-                            <span class="standard-card__tag">
-                                KNOWLEDGE INDEX
-                            </span>
-                        </div>
+                            <p class="standard-card__description">
+                                We convert human operator choices and structural anomalies into standard searchable
+                                documents, preventing senior knowledge loss.
+                            </p>
 
-                        <p class="standard-card__description">
-                            We convert human operator choices and structural anomalies into standard searchable
-                            documents, preventing senior knowledge loss.
-                        </p>
-
-                    </article>
+                        </article>
+                    </div>
 
                 </div>
 
@@ -587,8 +541,7 @@
 
         </section>
 
-
-        <section class="integrity-section animate-on-scroll">
+        <section class="integrity-section reveal">
 
             <div class="integrity-section__content">
 
@@ -603,7 +556,7 @@
                 <div class="integrity-section__features">
 
                     <div class="integrity-feature">
-                        <img src="./assets/icons/homepage/integrity-1.svg" alt="" class="integrity-feature__icon">
+                        <img src="assets/icons/homepage/integrity-1.svg" alt="" class="integrity-feature__icon">
 
                         <span class="integrity-feature__text">
                             Human in the Loop
@@ -612,25 +565,23 @@
 
 
                     <div class="integrity-feature">
-                        <img src="./assets/icons/homepage/integrity-2.svg" alt="" class="integrity-feature__icon">
+                        <img src="assets/icons/homepage/integrity-2.svg" alt="" class="integrity-feature__icon">
 
                         <span class="integrity-feature__text">
                             Read-only Integrations
                         </span>
                     </div>
 
-
                     <div class="integrity-feature">
-                        <img src="./assets/icons/homepage/integrity-3.svg" alt="" class="integrity-feature__icon">
+                        <img src="assets/icons/homepage/integrity-3.svg" alt="" class="integrity-feature__icon">
 
                         <span class="integrity-feature__text">
                             Data Isolation
                         </span>
                     </div>
 
-
                     <div class="integrity-feature">
-                        <img src="./assets/icons/homepage/integrity-4.svg" alt="" class="integrity-feature__icon">
+                        <img src="assets/icons/homepage/integrity-4.svg" alt="" class="integrity-feature__icon">
 
                         <span class="integrity-feature__text">
                             Enterprise Ready
@@ -643,16 +594,14 @@
 
         </section>
 
-
         <section class="demo-section">
 
-            <div class="demo-section__content animate-on-scroll">
+            <div class="demo-section__content reveal">
 
                 <div class="demo-section__eyebrow">
                     <span class="demo-section__eyebrow-dot"></span>
                     <span>See It In Action.</span>
                 </div>
-
 
                 <h2 class="demo-section__heading">
                     Watch Decisio protect a
@@ -660,7 +609,6 @@
                         critical decision.
                     </span>
                 </h2>
-
 
                 <p class="demo-section__description">
                     A three-minute walkthrough of how Decisio surfaces the right question
@@ -675,13 +623,11 @@
 
                 </div>
 
-
                 <a href="#" class="demo-section__cta">
                     <span>Book a Demo</span>
-                    <img src="./assets/icons/homepage/arrow-button.svg" alt="arrow">
+                    <img src="assets/icons/homepage/arrow-button.svg" alt="arrow">
 
                 </a>
-
 
                 <p class="demo-section__supporting">
                     30 minutes · run it on your own failure scenarios.
@@ -691,11 +637,9 @@
 
         </section>
 
-
-
         <section class="cta-banner">
 
-            <div class="cta-banner__content animate-on-scroll">
+            <div class="cta-banner__content reveal">
 
                 <div class="cta-banner__text">
 
@@ -704,46 +648,39 @@
                     </h2>
 
                     <p class="cta-banner__description">
-                        Empower your control room with institutional memory and active risk indexing.
-                        Zero write authority. 100% human oversight.                    </p>
+                        Empower your control room with institutional memory and active risk indexing. Zero write authority. 100% human oversight.
+                    </p>
 
                 </div>
 
+                <div class="cta_buttons"> 
 
-                <a
-                    href="#"
-                    class="cta-banner__button"
-                >
-                    Book a Demo
-                </a>
+                    <a href="#" class="cta-banner__button">Book a Demo</a>
+
+                </div>
 
             </div>
 
         </section>
-
-
 
     </main>
 
 
     <footer class="footer">
 
-
         <div class="footer__content">
-
 
             <div class="footer__brand">
 
                 <div class="footer__brand-name">
 
-                    <img src="./assets/images/decisio-blue-logo.svg" alt="Decisio" class="footer__logo">
+                    <img src="assets/images/decisio-blue-logo.svg" alt="Decisio" class="footer__logo">
 
                     <span class="footer__brand-text">
                         Decisio
                     </span>
 
                 </div>
-
 
                 <p class="footer__description">
                     Precision decision-intelligence for heavy assets.
@@ -752,31 +689,17 @@
 
             </div>
 
-
             <div class="footer__column">
 
                 <h3>
                     Product
                 </h3>
 
-                <a href="pages/features.html">
-                    Features
-                </a>
-
-                <a href="pages/how-it-works.html">
-                    How It Works
-                </a>
-
-                <a href="pages/use-cases.html">
-                    Use Cases
-                </a>
-
-                <a href="#">
-                    Pricing
-                </a>
+                <a href="features.html">Features</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="#">Pricing</a>
 
             </div>
-
 
             <div class="footer__column">
 
@@ -784,24 +707,11 @@
                     Company
                 </h3>
 
-                <a href="pages/about.html">
-                    About
-                </a>
-
-                <a href="#">
-                    Careers
-                </a>
-
-                <a href="#">
-                    Blog
-                </a>
-
-                <a href="#">
-                    Press
-                </a>
+                <a href="about.html">About</a>
+                <a href="safety.html">Safety</a>
+                <a href="contact.html">Contact</a>
 
             </div>
-
 
             <div class="footer__column">
 
@@ -809,24 +719,11 @@
                     Resources
                 </h3>
 
-                <a href="#">
-                    Documentation
-                </a>
-
-                <a href="#">
-                    API
-                </a>
-
-                <a href="#">
-                    Status
-                </a>
-
-                <a href="#">
-                    Security
-                </a>
+                <a href="#">Documentation</a>
+                <a href="#">API</a>
+                <a href="#">Security</a>
 
             </div>
-
 
             <div class="footer__column">
 
@@ -834,29 +731,15 @@
                     Legal
                 </h3>
 
-                <a href="pages/privacy.html">
-                    Privacy
-                </a>
-
-                <a href="pages/terms.html">
-                    Terms
-                </a>
-
-                <a href="pages/cookie-policy.html">
-                    Cookie Policy
-                </a>
-
-                <a href="#">
-                    Compliance
-                </a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
 
             </div>
 
         </div>
 
-
         <div class="footer__divider"></div>
-
 
         <div class="footer__bottom">
 
@@ -864,28 +747,25 @@
                 © 2026 Decisio Inc. All rights reserved.
             </p>
 
-
             <div class="footer__socials">
 
                 <a href="#" aria-label="LinkedIn">
-                    <img src="./assets/images/linkedin.svg" alt="">
+                    <img src="assets/images/linkedin.svg" alt="">
                 </a>
 
                 <a href="#" aria-label="Twitter">
-                    <img src="./assets/images/twitter.svg" alt="">
+                    <img src="assets/images/twitter.svg" alt="">
                 </a>
 
                 <a href="#" aria-label="GitHub">
-                    <img src="./assets/images/github.svg" alt="">
+                    <img src="assets/images/github.svg" alt="">
                 </a>
 
             </div>
 
         </div>
 
-
     </footer>
-
 
 
     <script src="js/scroll-animations.js" defer></script>
